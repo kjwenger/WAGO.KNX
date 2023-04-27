@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Modified by WAGO-I/O-CHECK 3 Version 3.22.1.2 (2020-04-01) -->
+<application application-name="WAGO-I/O-CHECK 3" application-ver="3.22.1.2 " application-date="2020-04-01" application-lang="de" file-type="1" >
+  <project project-name="TESTPROJEKT">
+    <node node-name="Knoten1" node-pos="0">
+      <module physical-pos="0" subbus-id="0" subbus-name="0x200A" article-no="0750-8202" article-id="" module-name="PFC200 CS 2Eth RS" use-customer-data="0" customer-module-name="" module-type="36">
+        <table table-no="0" table-len="29">
+          <register R02="0x0001" R03="0x40E3" R04="0x0000" R05="0x4AE7" R06="0x00C3" />
+        </table>
+        <table table-no="9" table-len="256">
+        </table>
+        <table table-no="90" table-len="1">
+        </table>
+        <table table-no="92" table-len="20">
+        </table>
+        <table table-no="93" table-len="20">
+        </table>
+        <table table-no="94" table-len="20">
+        </table>
+        <table table-no="95" table-len="20">
+        </table>
+        <table table-no="99" table-len="188">
+        </table>
+        <table table-no="100" table-len="86">
+        </table>
+        <table table-no="110" table-len="0">
+        </table>
+        <table table-no="111" table-len="0">
+        </table>
+        <table table-no="112" table-len="256">
+        </table>
+        <table table-no="113" table-len="0">
+        </table>
+        <table table-no="114" table-len="0">
+        </table>
+        <table table-no="115" table-len="0">
+        </table>
+        <table table-no="116" table-len="256">
+        </table>
+        <table table-no="117" table-len="0">
+        </table>
+        <table table-no="126" table-len="256">
+        </table>
+        <table table-no="127" table-len="10">
+        </table>
+      </module>
+      <module physical-pos="1" subbus-id="1" subbus-name="0x9001" article-no="0750-14xx" article-id="" module-name="16DI" use-customer-data="0" customer-module-name="" module-type="3">
+        <channel channel-no="1" channel-name="Digitaleingang E01"/>
+        <channel channel-no="2" channel-name="Digitaleingang E02"/>
+        <channel channel-no="3" channel-name="Digitaleingang E03"/>
+        <channel channel-no="4" channel-name="Digitaleingang E04"/>
+        <channel channel-no="5" channel-name="Digitaleingang E05"/>
+        <channel channel-no="6" channel-name="Digitaleingang E06"/>
+        <channel channel-no="7" channel-name="Digitaleingang E07"/>
+        <channel channel-no="8" channel-name="Digitaleingang E08"/>
+        <channel channel-no="9" channel-name="Digitaleingang E09"/>
+        <channel channel-no="10" channel-name="Digitaleingang E10"/>
+        <channel channel-no="11" channel-name="Digitaleingang E11"/>
+        <channel channel-no="12" channel-name="Digitaleingang E12"/>
+        <channel channel-no="13" channel-name="Digitaleingang E13"/>
+        <channel channel-no="14" channel-name="Digitaleingang E14"/>
+        <channel channel-no="15" channel-name="Digitaleingang E15"/>
+        <channel channel-no="16" channel-name="Digitaleingang E16"/>
+      </module>
+      <module physical-pos="2" subbus-id="2" subbus-name="0x9001" article-no="0750-14xx" article-id="" module-name="16DI" use-customer-data="0" customer-module-name="" module-type="3">
+        <channel channel-no="1" channel-name="Digitaleingang E01"/>
+        <channel channel-no="2" channel-name="Digitaleingang E02"/>
+        <channel channel-no="3" channel-name="Digitaleingang E03"/>
+        <channel channel-no="4" channel-name="Digitaleingang E04"/>
+        <channel channel-no="5" channel-name="Digitaleingang E05"/>
+        <channel channel-no="6" channel-name="Digitaleingang E06"/>
+        <channel channel-no="7" channel-name="Digitaleingang E07"/>
+        <channel channel-no="8" channel-name="Digitaleingang E08"/>
+        <channel channel-no="9" channel-name="Digitaleingang E09"/>
+        <channel channel-no="10" channel-name="Digitaleingang E10"/>
+        <channel channel-no="11" channel-name="Digitaleingang E11"/>
+        <channel channel-no="12" channel-name="Digitaleingang E12"/>
+        <channel channel-no="13" channel-name="Digitaleingang E13"/>
+        <channel channel-no="14" channel-name="Digitaleingang E14"/>
+        <channel channel-no="15" channel-name="Digitaleingang E15"/>
+        <channel channel-no="16" channel-name="Digitaleingang E16"/>
+      </module>
+      <module physical-pos="3" subbus-id="3" subbus-name="0x9001" article-no="0750-14xx" article-id="" module-name="16DI" use-customer-data="0" customer-module-name="" module-type="3">
+        <channel channel-no="1" channel-name="Digitaleingang E01"/>
+        <channel channel-no="2" channel-name="Digitaleingang E02"/>
+        <channel channel-no="3" channel-name="Digitaleingang E03"/>
+        <channel channel-no="4" channel-name="Digitaleingang E04"/>
+        <channel channel-no="5" channel-name="Digitaleingang E05"/>
+        <channel channel-no="6" channel-name="Digitaleingang E06"/>
+        <channel channel-no="7" channel-name="Digitaleingang E07"/>
+        <channel channel-no="8" channel-name="Digitaleingang E08"/>
+        <channel channel-no="9" channel-name="Digitaleingang E09"/>
+        <channel channel-no="10" channel-name="Digitaleingang E10"/>
+        <channel channel-no="11" channel-name="Digitaleingang E11"/>
+        <channel channel-no="12" channel-name="Digitaleingang E12"/>
+        <channel channel-no="13" channel-name="Digitaleingang E13"/>
+        <channel channel-no="14" channel-name="Digitaleingang E14"/>
+        <channel channel-no="15" channel-name="Digitaleingang E15"/>
+        <channel channel-no="16" channel-name="Digitaleingang E16"/>
+      </module>
+      <module physical-pos="4" subbus-id="4" subbus-name="0x8801" article-no="0750-04xx" article-id="" module-name="8DI" use-customer-data="0" customer-module-name="" module-type="3">
+        <channel channel-no="1" channel-name="Digitaleingang E01"/>
+        <channel channel-no="2" channel-name="Digitaleingang E02"/>
+        <channel channel-no="3" channel-name="Digitaleingang E03"/>
+        <channel channel-no="4" channel-name="Digitaleingang E04"/>
+        <channel channel-no="5" channel-name="Digitaleingang E05"/>
+        <channel channel-no="6" channel-name="Digitaleingang E06"/>
+        <channel channel-no="7" channel-name="Digitaleingang E07"/>
+        <channel channel-no="8" channel-name="Digitaleingang E08"/>
+      </module>
+      <module physical-pos="5" subbus-id="5" subbus-name="0x8801" article-no="0750-04xx" article-id="" module-name="8DI" use-customer-data="0" customer-module-name="" module-type="3">
+        <channel channel-no="1" channel-name="Digitaleingang E01"/>
+        <channel channel-no="2" channel-name="Digitaleingang E02"/>
+        <channel channel-no="3" channel-name="Digitaleingang E03"/>
+        <channel channel-no="4" channel-name="Digitaleingang E04"/>
+        <channel channel-no="5" channel-name="Digitaleingang E05"/>
+        <channel channel-no="6" channel-name="Digitaleingang E06"/>
+        <channel channel-no="7" channel-name="Digitaleingang E07"/>
+        <channel channel-no="8" channel-name="Digitaleingang E08"/>
+      </module>
+      <module physical-pos="6" subbus-id="6" subbus-name="0x9002" article-no="0750-15xx" article-id="" module-name="16DO" use-customer-data="0" customer-module-name="" module-type="4">
+        <channel channel-no="1" channel-name="Digitalausgang A01"/>
+        <channel channel-no="2" channel-name="Digitalausgang A02"/>
+        <channel channel-no="3" channel-name="Digitalausgang A03"/>
+        <channel channel-no="4" channel-name="Digitalausgang A04"/>
+        <channel channel-no="5" channel-name="Digitalausgang A05"/>
+        <channel channel-no="6" channel-name="Digitalausgang A06"/>
+        <channel channel-no="7" channel-name="Digitalausgang A07"/>
+        <channel channel-no="8" channel-name="Digitalausgang A08"/>
+        <channel channel-no="9" channel-name="Digitalausgang A09"/>
+        <channel channel-no="10" channel-name="Digitalausgang A10"/>
+        <channel channel-no="11" channel-name="Digitalausgang A11"/>
+        <channel channel-no="12" channel-name="Digitalausgang A12"/>
+        <channel channel-no="13" channel-name="Digitalausgang A13"/>
+        <channel channel-no="14" channel-name="Digitalausgang A14"/>
+        <channel channel-no="15" channel-name="Digitalausgang A15"/>
+        <channel channel-no="16" channel-name="Digitalausgang A16"/>
+      </module>
+      <module physical-pos="7" subbus-id="7" subbus-name="0x9002" article-no="0750-15xx" article-id="" module-name="16DO" use-customer-data="0" customer-module-name="" module-type="4">
+        <channel channel-no="1" channel-name="Digitalausgang A01"/>
+        <channel channel-no="2" channel-name="Digitalausgang A02"/>
+        <channel channel-no="3" channel-name="Digitalausgang A03"/>
+        <channel channel-no="4" channel-name="Digitalausgang A04"/>
+        <channel channel-no="5" channel-name="Digitalausgang A05"/>
+        <channel channel-no="6" channel-name="Digitalausgang A06"/>
+        <channel channel-no="7" channel-name="Digitalausgang A07"/>
+        <channel channel-no="8" channel-name="Digitalausgang A08"/>
+        <channel channel-no="9" channel-name="Digitalausgang A09"/>
+        <channel channel-no="10" channel-name="Digitalausgang A10"/>
+        <channel channel-no="11" channel-name="Digitalausgang A11"/>
+        <channel channel-no="12" channel-name="Digitalausgang A12"/>
+        <channel channel-no="13" channel-name="Digitalausgang A13"/>
+        <channel channel-no="14" channel-name="Digitalausgang A14"/>
+        <channel channel-no="15" channel-name="Digitalausgang A15"/>
+        <channel channel-no="16" channel-name="Digitalausgang A16"/>
+      </module>
+      <module physical-pos="8" subbus-id="8" subbus-name="0x9002" article-no="0750-15xx" article-id="" module-name="16DO" use-customer-data="0" customer-module-name="" module-type="4">
+        <channel channel-no="1" channel-name="Digitalausgang A01"/>
+        <channel channel-no="2" channel-name="Digitalausgang A02"/>
+        <channel channel-no="3" channel-name="Digitalausgang A03"/>
+        <channel channel-no="4" channel-name="Digitalausgang A04"/>
+        <channel channel-no="5" channel-name="Digitalausgang A05"/>
+        <channel channel-no="6" channel-name="Digitalausgang A06"/>
+        <channel channel-no="7" channel-name="Digitalausgang A07"/>
+        <channel channel-no="8" channel-name="Digitalausgang A08"/>
+        <channel channel-no="9" channel-name="Digitalausgang A09"/>
+        <channel channel-no="10" channel-name="Digitalausgang A10"/>
+        <channel channel-no="11" channel-name="Digitalausgang A11"/>
+        <channel channel-no="12" channel-name="Digitalausgang A12"/>
+        <channel channel-no="13" channel-name="Digitalausgang A13"/>
+        <channel channel-no="14" channel-name="Digitalausgang A14"/>
+        <channel channel-no="15" channel-name="Digitalausgang A15"/>
+        <channel channel-no="16" channel-name="Digitalausgang A16"/>
+      </module>
+      <module physical-pos="9" subbus-id="9" subbus-name="0x0286" article-no="0753-0646" article-id="" module-name="KNX/TP1 Modul" use-customer-data="0" customer-module-name="" module-type="85">
+        <channel channel-no="1" channel-name="Datenkanal">
+          <register R09="0x3032" R10="0x020C" R11="0x0118" R12="0x1818" R13="0x8102" R16="0x0101" R17="0x0000" R18="0x0000" R19="0x0000" R20="0x0000" R21="0x0000" R32="0x0000" R33="0x1618" R34="0xE000" R35="0x0005" />
+        </channel>
+      </module>
+      <module physical-pos="10" subbus-id="10" subbus-name="0x0287" article-no="0753-0647" article-id="" module-name="DALI-Multi-Master" use-customer-data="0" customer-module-name="" module-type="85">
+        <channel channel-no="1" channel-name="Datenkanal">
+          <register R09="0x3233" R10="0x020C" R11="0x0118" R12="0x1818" R13="0x8002" R16="0x0103" R17="0x0000" R18="0x0000" R19="0x0000" R20="0x0000" R21="0x0000" R32="0x03DD" R33="0x1718" R34="0x0001" R35="0x030A" />
+        </channel>
+      </module>
+      <module physical-pos="11" subbus-id="11" subbus-name="0x0000" article-no="0750-0600" article-id="" module-name="Endklemme" use-customer-data="0" customer-module-name="" module-type="5">
+      </module>
+    </node>
+  </project>
+</application>
