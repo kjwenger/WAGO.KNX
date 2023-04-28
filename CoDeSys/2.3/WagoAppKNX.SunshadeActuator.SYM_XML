@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<CoDeSysSymbolTable>
+	<SymbolHeader>
+		<Version>-1</Version>
+		<ProjectId>86747</ProjectId>
+		<WorkbenchVersion>2.3.9.68</WorkbenchVersion>
+		<CompilerVersion>2.3.9.62</CompilerVersion>
+	</SymbolHeader>
+	<SymbolTypeList>
+		<TypeSimple TypeId="0" Size="4">TIME</TypeSimple>
+		<TypeSimple TypeId="1" Size="1">BOOL</TypeSimple>
+		<TypeUserdef TypeId="2" Size="24">
+			<Name>TON</Name>
+			<Var Type="1" Flags="256" Access="114" RefId="6" Offset="0">M</Var>
+			<Var Type="0" Flags="256" Access="114" RefId="6" Offset="4">StartTime</Var>
+			<Var Type="1" Flags="257" Access="114" RefId="6" Offset="8">IN</Var>
+			<Var Type="0" Flags="257" Access="114" RefId="6" Offset="12">PT</Var>
+			<Var Type="1" Flags="258" Access="114" RefId="6" Offset="16">Q</Var>
+			<Var Type="0" Flags="258" Access="114" RefId="6" Offset="20">ET</Var>
+		</TypeUserdef>
+		<TypeSimple TypeId="3" Size="1">BYTE</TypeSimple>
+		<TypeEnum TypeId="4" Size="2">ENUMDEVICESTATUS</TypeEnum>
+		<TypeUserdef TypeId="5" Size="4">
+			<Name>TYPDEVICESTATUS</Name>
+			<Var Type="4" Flags="268435715" Access="114" RefId="278" Offset="0">eDeviceStatus</Var>
+			<Var Type="3" Flags="259" Access="114" RefId="278" Offset="2">bDeviceProgMode</Var>
+		</TypeUserdef>
+		<TypeUserdef TypeId="6" Size="4">
+			<Name>GET_DEVICE_STATUS</Name>
+			<Var Type="5" Flags="268435714" Access="114" RefId="279" Offset="0">stDeviceStatue</Var>
+		</TypeUserdef>
+		<TypeSimple TypeId="7" Size="4">DWORD</TypeSimple>
+		<TypeArray TypeId="8" Size="15">
+			<Dimension Lower="0" Upper="14"/>
+			<BaseType>
+				<TypeSimple Size="1">BYTE</TypeSimple>
+			</BaseType>
+		</TypeArray>
+		<TypeUserdef TypeId="9" Size="48">
+			<Name>TYPMODULE_646</Name>
+			<Var Type="3" Flags="259" Access="114" RefId="50" Offset="0">bNumber</Var>
+			<Var Type="3" Flags="259" Access="114" RefId="50" Offset="1">bCurrent_Pos</Var>
+			<Var Type="7" Flags="259" Access="114" RefId="50" Offset="4">dwSendAddr</Var>
+			<Var Type="7" Flags="259" Access="114" RefId="50" Offset="8">dwReceAddr</Var>
+			<Var Type="1" Flags="259" Access="114" RefId="50" Offset="12">xBusy</Var>
+			<Var Type="1" Flags="259" Access="114" RefId="50" Offset="13">xNewData</Var>
+			<Var Type="1" Flags="259" Access="114" RefId="50" Offset="14">xSendOnReset</Var>
+			<Var Type="1" Flags="259" Access="114" RefId="50" Offset="15">xSyncReady</Var>
+			<Var Type="3" Flags="259" Access="114" RefId="50" Offset="16">bBytesToSend</Var>
+			<Var Type="8" Flags="259" Access="114" RefId="50" Offset="17">arDATA_OUT</Var>
+			<Var Type="8" Flags="259" Access="114" RefId="50" Offset="32">arDATA_IN</Var>
+		</TypeUserdef>
+		<TypeUserdef TypeId="10" Size="60">
+			<Name>TYPKNX</Name>
+			<Var Type="7" Flags="259" Access="114" RefId="51" Offset="0">dwCRC</Var>
+			<Var Type="3" Flags="259" Access="114" RefId="51" Offset="4">bHW_type</Var>
+			<Var Type="9" Flags="268435715" Access="114" RefId="51" Offset="8">typModule_646</Var>
+			<Var Type="3" Flags="259" Access="114" RefId="51" Offset="56">bError</Var>
+		</TypeUserdef>
+		<TypePointer TypeId="11" Size="4">
+			<BaseType>
+				<TypeUserdef Size="60">
+					<Name>TYPKNX</Name>
+					<Var Type="7" Flags="259" Access="114" RefId="51" Offset="0">dwCRC</Var>
+					<Var Type="3" Flags="259" Access="114" RefId="51" Offset="4">bHW_type</Var>
+					<Var Type="9" Flags="268435715" Access="114" RefId="51" Offset="8">typModule_646</Var>
+					<Var Type="3" Flags="259" Access="114" RefId="51" Offset="56">bError</Var>
+				</TypeUserdef>
+			</BaseType>
+		</TypePointer>
+		<TypeUserdef TypeId="12" Size="48">
+			<Name>FBKNX_MASTER_849</Name>
+			<Var Type="0" Flags="260" Access="114" RefId="281" Offset="0">tWaitTime</Var>
+			<Var Type="2" Flags="268435712" Access="114" RefId="281" Offset="4">TONWait</Var>
+			<Var Type="1" Flags="256" Access="114" RefId="281" Offset="28">init</Var>
+			<Var Type="3" Flags="256" Access="114" RefId="281" Offset="29">i</Var>
+			<Var Type="6" Flags="268435712" Access="114" RefId="281" Offset="32">GET_DEVICE_STATUS1</Var>
+			<Var Type="5" Flags="268435712" Access="114" RefId="281" Offset="36">typDeviceStatus</Var>
+			<Var Type="4" Flags="268435714" Access="114" RefId="281" Offset="40">enumDeviceStatus</Var>
+			<Var Type="1" Flags="258" Access="114" RefId="281" Offset="42">xProg_Mode</Var>
+			<Var Type="11" Flags="268436739" Access="114" RefId="281" Offset="44">typKNX</Var>
+		</TypeUserdef>
+		<TypeSimple TypeId="13" Size="2">WORD</TypeSimple>
+		<TypeUserdef TypeId="14" Size="8">
+			<Name>MODULE_INFO_ACCESS</Name>
+			<Var Type="3" Flags="259" Access="114" RefId="17" Offset="0">physicalPosOf</Var>
+			<Var Type="3" Flags="259" Access="114" RefId="17" Offset="1">physicalPosTo</Var>
+			<Var Type="3" Flags="259" Access="114" RefId="17" Offset="2">typeNumber</Var>
+			<Var Type="13" Flags="259" Access="114" RefId="17" Offset="4">moduleType</Var>
+			<Var Type="13" Flags="259" Access="114" RefId="17" Offset="6">window</Var>
+		</TypeUserdef>
+		<TypeUserdef TypeId="15" Size="8">
+			<Name>ADD_DESC</Name>
+			<Var Type="13" Flags="259" Access="114" RefId="18" Offset="0">posPAA</Var>
+			<Var Type="13" Flags="259" Access="114" RefId="18" Offset="2">posPAE</Var>
+			<Var Type="3" Flags="259" Access="114" RefId="18" Offset="4">sizePAA</Var>
+			<Var Type="3" Flags="259" Access="114" RefId="18" Offset="5">sizePAE</Var>
+			<Var Type="3" Flags="259" Access="114" RefId="18" Offset="6">channels</Var>
+			<Var Type="3" Flags="259" Access="114" RefId="18" Offset="7">altFormat</Var>
+		</TypeUserdef>
+		<TypeUserdef TypeId="16" Size="12">
+			<Name>MODULE_INFO</Name>
+			<Var Type="3" Flags="259" Access="114" RefId="19" Offset="0">physicalPos</Var>
+			<Var Type="13" Flags="259" Access="114" RefId="19" Offset="2">moduleType</Var>
+			<Var Type="15" Flags="268435715" Access="114" RefId="19" Offset="4">desc</Var>
+		</TypeUserdef>
+		<TypeUserdef TypeId="17" Size="8">
+			<Name>READ_INPUT_WORD</Name>
+			<Var Type="13" Flags="257" Access="114" RefId="20" Offset="0">WORD_ADDRESS</Var>
+			<Var Type="13" Flags="258" Access="114" RefId="20" Offset="2">VALUE</Var>
+			<Var Type="1" Flags="258" Access="114" RefId="20" Offset="4">ERROR</Var>
+		</TypeUserdef>
+		<TypeArray TypeId="18" Size="96">
+			<Dimension Lower="0" Upper="11"/>
+			<BaseType>
+				<TypeUserdef Size="8">
+					<Name>READ_INPUT_WORD</Name>
+					<Var Type="13" Flags="257" Access="114" RefId="20" Offset="0">WORD_ADDRESS</Var>
+					<Var Type="13" Flags="258" Access="114" RefId="20" Offset="2">VALUE</Var>
+					<Var Type="1" Flags="258" Access="114" RefId="20" Offset="4">ERROR</Var>
+				</TypeUserdef>
+			</BaseType>
+		</TypeArray>
+		<TypeUserdef TypeId="19" Size="8">
+			<Name>WRITE_OUTPUT_WORD</Name>
+			<Var Type="13" Flags="257" Access="114" RefId="21" Offset="0">WORD_ADDRESS</Var>
+			<Var Type="13" Flags="257" Access="114" RefId="21" Offset="2">VALUE</Var>
+			<Var Type="1" Flags="258" Access="114" RefId="21" Offset="4">ERROR</Var>
+		</TypeUserdef>
+		<TypeArray TypeId="20" Size="96">
+			<Dimension Lower="0" Upper="11"/>
+			<BaseType>
+				<TypeUserdef Size="8">
+					<Name>WRITE_OUTPUT_WORD</Name>
+					<Var Type="13" Flags="257" Access="114" RefId="21" Offset="0">WORD_ADDRESS</Var>
+					<Var Type="13" Flags="257" Access="114" RefId="21" Offset="2">VALUE</Var>
+					<Var Type="1" Flags="258" Access="114" RefId="21" Offset="4">ERROR</Var>
+				</TypeUserdef>
+			</BaseType>
+		</TypeArray>
+		<TypeArray TypeId="21" Size="24">
+			<Dimension Lower="0" Upper="11"/>
+			<BaseType>
+				<TypeSimple Size="2">WORD</TypeSimple>
+			</BaseType>
+		</TypeArray>
+		<TypeArray TypeId="22" Size="24">
+			<Dimension Lower="0" Upper="23"/>
+			<BaseType>
+				<TypeSimple Size="1">BYTE</TypeSimple>
+			</BaseType>
+		</TypeArray>
+		<TypePointer TypeId="23" Size="4">
+			<BaseType>
+				<TypeArray Size="24">
+					<Dimension Lower="0" Upper="23"/>
+					<BaseType>
+						<TypeSimple Size="1">BYTE</TypeSimple>
+					</BaseType>
+				</TypeArray>
+			</BaseType>
+		</TypePointer>
+		<TypePointer TypeId="24" Size="4">
+			<BaseType>
+				<TypeArray Size="24">
+					<Dimension Lower="0" Upper="11"/>
+					<BaseType>
+						<TypeSimple Size="2">WORD</TypeSimple>
+					</BaseType>
+				</TypeArray>
+			</BaseType>
+		</TypePointer>
+		<TypeUserdef TypeId="25" Size="4">
+			<Name>R_TRIG</Name>
+			<Var Type="1" Flags="256" Access="114" RefId="5" Offset="0">M</Var>
+			<Var Type="1" Flags="257" Access="114" RefId="5" Offset="1">CLK</Var>
+			<Var Type="1" Flags="258" Access="114" RefId="5" Offset="2">Q</Var>
+		</TypeUserdef>
+		<TypeSimple TypeId="26" Size="2">INT</TypeSimple>
+		<TypeUserdef TypeId="27" Size="480">
+			<Name>FBKNX_MASTER_646</Name>
+			<Var Type="14" Flags="268435712" Access="114" RefId="116" Offset="0">access</Var>
+			<Var Type="16" Flags="268435712" Access="114" RefId="116" Offset="8">info</Var>
+			<Var Type="18" Flags="268435712" Access="114" RefId="116" Offset="20">arREAD_INPUT_WORD</Var>
+			<Var Type="20" Flags="268435712" Access="114" RefId="116" Offset="116">arWRITE_OUTPUT_WORD</Var>
+			<Var Type="21" Flags="256" Access="114" RefId="116" Offset="212">arInputWord</Var>
+			<Var Type="21" Flags="256" Access="114" RefId="116" Offset="236">arOutputWord</Var>
+			<Var Type="23" Flags="256" Access="114" RefId="116" Offset="260">ptInData</Var>
+			<Var Type="24" Flags="256" Access="114" RefId="116" Offset="264">ptOutData</Var>
+			<Var Type="22" Flags="256" Access="114" RefId="116" Offset="268">arInData</Var>
+			<Var Type="22" Flags="256" Access="114" RefId="116" Offset="292">arOutData</Var>
+			<Var Type="2" Flags="268435712" Access="114" RefId="116" Offset="316">TONWait</Var>
+			<Var Type="3" Flags="256" Access="114" RefId="116" Offset="340">mSendState</Var>
+			<Var Type="3" Flags="256" Access="114" RefId="116" Offset="341">mRecState</Var>
+			<Var Type="2" Flags="268435712" Access="114" RefId="116" Offset="344">TONTimeOut</Var>
+			<Var Type="2" Flags="268435712" Access="114" RefId="116" Offset="368">TONTimeOutSync</Var>
+			<Var Type="2" Flags="268435712" Access="114" RefId="116" Offset="392">TonTimeOutRec</Var>
+			<Var Type="2" Flags="268435712" Access="114" RefId="116" Offset="416">TonError</Var>
+			<Var Type="25" Flags="268435712" Access="114" RefId="116" Offset="440">Bus_PowerUp</Var>
+			<Var Type="1" Flags="256" Access="114" RefId="116" Offset="444">SyncEnd</Var>
+			<Var Type="3" Flags="256" Access="114" RefId="116" Offset="445">mAnzahl</Var>
+			<Var Type="1" Flags="256" Access="114" RefId="116" Offset="446">init</Var>
+			<Var Type="1" Flags="256" Access="114" RefId="116" Offset="447">StartSync</Var>
+			<Var Type="1" Flags="256" Access="114" RefId="116" Offset="448">Error</Var>
+			<Var Type="26" Flags="256" Access="114" RefId="116" Offset="450">i</Var>
+			<Var Type="3" Flags="260" Access="114" RefId="116" Offset="452">C2K_DRW</Var>
+			<Var Type="3" Flags="260" Access="114" RefId="116" Offset="453">C2K_SDEV</Var>
+			<Var Type="3" Flags="260" Access="114" RefId="116" Offset="454">C2K_ESYNC</Var>
+			<Var Type="3" Flags="260" Access="114" RefId="116" Offset="455">K2C_DRD</Var>
+			<Var Type="0" Flags="260" Access="114" RefId="116" Offset="456">tWaitTime</Var>
+			<Var Type="0" Flags="260" Access="114" RefId="116" Offset="460">tTime</Var>
+			<Var Type="0" Flags="260" Access="114" RefId="116" Offset="464">tTimeSync</Var>
+			<Var Type="3" Flags="257" Access="114" RefId="116" Offset="468">bModule_753_646</Var>
+			<Var Type="4" Flags="268435714" Access="114" RefId="116" Offset="470">enumStatusKNX</Var>
+			<Var Type="1" Flags="258" Access="114" RefId="116" Offset="472">xProg_Mode</Var>
+			<Var Type="11" Flags="268436739" Access="114" RefId="116" Offset="476">typKNX</Var>
+		</TypeUserdef>
+		<TypeSimple TypeId="28" Size="4">REAL</TypeSimple>
+	</SymbolTypeList>
+	<SymbolVarList>
+		<Var Type="4" Flags="301989952" Access="98" RefId="4" Offset="2534">.enumStatusKNX1</Var>
+		<Var Type="4" Flags="268435458" Access="98" RefId="4" Offset="2576" TopLevelType="12">.fbKNX1_Master_849.enumDeviceStatus</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="2570" TopLevelType="12">.fbKNX1_Master_849.GET_DEVICE_STATUS1.stDeviceStatue.bDeviceProgMode</Var>
+		<Var Type="4" Flags="268435459" Access="98" RefId="4" Offset="2568" TopLevelType="12">.fbKNX1_Master_849.GET_DEVICE_STATUS1.stDeviceStatue.eDeviceStatus</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2565" TopLevelType="12">.fbKNX1_Master_849.i</Var>
+		<Var Type="1" Flags="0" Access="98" RefId="4" Offset="2564" TopLevelType="12">.fbKNX1_Master_849.init</Var>
+		<Var Type="0" Flags="2" Access="98" RefId="4" Offset="2560" TopLevelType="12">.fbKNX1_Master_849.TONWait.ET</Var>
+		<Var Type="1" Flags="1" Access="98" RefId="4" Offset="2548" TopLevelType="12">.fbKNX1_Master_849.TONWait.IN</Var>
+		<Var Type="1" Flags="0" Access="98" RefId="4" Offset="2540" TopLevelType="12">.fbKNX1_Master_849.TONWait.M</Var>
+		<Var Type="0" Flags="1" Access="98" RefId="4" Offset="2552" TopLevelType="12">.fbKNX1_Master_849.TONWait.PT</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2556" TopLevelType="12">.fbKNX1_Master_849.TONWait.Q</Var>
+		<Var Type="0" Flags="0" Access="98" RefId="4" Offset="2544" TopLevelType="12">.fbKNX1_Master_849.TONWait.StartTime</Var>
+		<Var Type="0" Flags="4" Access="98" RefId="4" Offset="2536" TopLevelType="12">.fbKNX1_Master_849.tWaitTime</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="2574" TopLevelType="12">.fbKNX1_Master_849.typDeviceStatus.bDeviceProgMode</Var>
+		<Var Type="4" Flags="268435459" Access="98" RefId="4" Offset="2572" TopLevelType="12">.fbKNX1_Master_849.typDeviceStatus.eDeviceStatus</Var>
+		<Var Type="11" Flags="268436483" Access="98" RefId="4" Offset="2580" TopLevelType="12">.fbKNX1_Master_849.typKNX</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2578" TopLevelType="12">.fbKNX1_Master_849.xProg_Mode</Var>
+		<Var Type="13" Flags="3" Access="98" RefId="4" Offset="2588" TopLevelType="27">.fbKNX2_Master_646.access.moduleType</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="2584" TopLevelType="27">.fbKNX2_Master_646.access.physicalPosOf</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="2585" TopLevelType="27">.fbKNX2_Master_646.access.physicalPosTo</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="2586" TopLevelType="27">.fbKNX2_Master_646.access.typeNumber</Var>
+		<Var Type="13" Flags="3" Access="98" RefId="4" Offset="2590" TopLevelType="27">.fbKNX2_Master_646.access.window</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2852" TopLevelType="27">.fbKNX2_Master_646.arInData[0]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2862" TopLevelType="27">.fbKNX2_Master_646.arInData[10]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2863" TopLevelType="27">.fbKNX2_Master_646.arInData[11]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2864" TopLevelType="27">.fbKNX2_Master_646.arInData[12]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2865" TopLevelType="27">.fbKNX2_Master_646.arInData[13]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2866" TopLevelType="27">.fbKNX2_Master_646.arInData[14]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2867" TopLevelType="27">.fbKNX2_Master_646.arInData[15]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2868" TopLevelType="27">.fbKNX2_Master_646.arInData[16]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2869" TopLevelType="27">.fbKNX2_Master_646.arInData[17]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2870" TopLevelType="27">.fbKNX2_Master_646.arInData[18]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2871" TopLevelType="27">.fbKNX2_Master_646.arInData[19]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2853" TopLevelType="27">.fbKNX2_Master_646.arInData[1]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2872" TopLevelType="27">.fbKNX2_Master_646.arInData[20]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2873" TopLevelType="27">.fbKNX2_Master_646.arInData[21]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2874" TopLevelType="27">.fbKNX2_Master_646.arInData[22]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2875" TopLevelType="27">.fbKNX2_Master_646.arInData[23]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2854" TopLevelType="27">.fbKNX2_Master_646.arInData[2]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2855" TopLevelType="27">.fbKNX2_Master_646.arInData[3]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2856" TopLevelType="27">.fbKNX2_Master_646.arInData[4]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2857" TopLevelType="27">.fbKNX2_Master_646.arInData[5]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2858" TopLevelType="27">.fbKNX2_Master_646.arInData[6]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2859" TopLevelType="27">.fbKNX2_Master_646.arInData[7]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2860" TopLevelType="27">.fbKNX2_Master_646.arInData[8]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2861" TopLevelType="27">.fbKNX2_Master_646.arInData[9]</Var>
+		<Var Type="13" Flags="0" Access="98" RefId="4" Offset="2796" TopLevelType="27">.fbKNX2_Master_646.arInputWord[0]</Var>
+		<Var Type="13" Flags="0" Access="98" RefId="4" Offset="2816" TopLevelType="27">.fbKNX2_Master_646.arInputWord[10]</Var>
+		<Var Type="13" Flags="0" Access="98" RefId="4" Offset="2818" TopLevelType="27">.fbKNX2_Master_646.arInputWord[11]</Var>
+		<Var Type="13" Flags="0" Access="98" RefId="4" Offset="2798" TopLevelType="27">.fbKNX2_Master_646.arInputWord[1]</Var>
+		<Var Type="13" Flags="0" Access="98" RefId="4" Offset="2800" TopLevelType="27">.fbKNX2_Master_646.arInputWord[2]</Var>
+		<Var Type="13" Flags="0" Access="98" RefId="4" Offset="2802" TopLevelType="27">.fbKNX2_Master_646.arInputWord[3]</Var>
+		<Var Type="13" Flags="0" Access="98" RefId="4" Offset="2804" TopLevelType="27">.fbKNX2_Master_646.arInputWord[4]</Var>
+		<Var Type="13" Flags="0" Access="98" RefId="4" Offset="2806" TopLevelType="27">.fbKNX2_Master_646.arInputWord[5]</Var>
+		<Var Type="13" Flags="0" Access="98" RefId="4" Offset="2808" TopLevelType="27">.fbKNX2_Master_646.arInputWord[6]</Var>
+		<Var Type="13" Flags="0" Access="98" RefId="4" Offset="2810" TopLevelType="27">.fbKNX2_Master_646.arInputWord[7]</Var>
+		<Var Type="13" Flags="0" Access="98" RefId="4" Offset="2812" TopLevelType="27">.fbKNX2_Master_646.arInputWord[8]</Var>
+		<Var Type="13" Flags="0" Access="98" RefId="4" Offset="2814" TopLevelType="27">.fbKNX2_Master_646.arInputWord[9]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2876" TopLevelType="27">.fbKNX2_Master_646.arOutData[0]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2886" TopLevelType="27">.fbKNX2_Master_646.arOutData[10]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2887" TopLevelType="27">.fbKNX2_Master_646.arOutData[11]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2888" TopLevelType="27">.fbKNX2_Master_646.arOutData[12]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2889" TopLevelType="27">.fbKNX2_Master_646.arOutData[13]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2890" TopLevelType="27">.fbKNX2_Master_646.arOutData[14]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2891" TopLevelType="27">.fbKNX2_Master_646.arOutData[15]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2892" TopLevelType="27">.fbKNX2_Master_646.arOutData[16]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2893" TopLevelType="27">.fbKNX2_Master_646.arOutData[17]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2894" TopLevelType="27">.fbKNX2_Master_646.arOutData[18]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2895" TopLevelType="27">.fbKNX2_Master_646.arOutData[19]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2877" TopLevelType="27">.fbKNX2_Master_646.arOutData[1]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2896" TopLevelType="27">.fbKNX2_Master_646.arOutData[20]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2897" TopLevelType="27">.fbKNX2_Master_646.arOutData[21]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2898" TopLevelType="27">.fbKNX2_Master_646.arOutData[22]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2899" TopLevelType="27">.fbKNX2_Master_646.arOutData[23]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2878" TopLevelType="27">.fbKNX2_Master_646.arOutData[2]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2879" TopLevelType="27">.fbKNX2_Master_646.arOutData[3]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2880" TopLevelType="27">.fbKNX2_Master_646.arOutData[4]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2881" TopLevelType="27">.fbKNX2_Master_646.arOutData[5]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2882" TopLevelType="27">.fbKNX2_Master_646.arOutData[6]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2883" TopLevelType="27">.fbKNX2_Master_646.arOutData[7]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2884" TopLevelType="27">.fbKNX2_Master_646.arOutData[8]</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2885" TopLevelType="27">.fbKNX2_Master_646.arOutData[9]</Var>
+		<Var Type="13" Flags="0" Access="98" RefId="4" Offset="2820" TopLevelType="27">.fbKNX2_Master_646.arOutputWord[0]</Var>
+		<Var Type="13" Flags="0" Access="98" RefId="4" Offset="2840" TopLevelType="27">.fbKNX2_Master_646.arOutputWord[10]</Var>
+		<Var Type="13" Flags="0" Access="98" RefId="4" Offset="2842" TopLevelType="27">.fbKNX2_Master_646.arOutputWord[11]</Var>
+		<Var Type="13" Flags="0" Access="98" RefId="4" Offset="2822" TopLevelType="27">.fbKNX2_Master_646.arOutputWord[1]</Var>
+		<Var Type="13" Flags="0" Access="98" RefId="4" Offset="2824" TopLevelType="27">.fbKNX2_Master_646.arOutputWord[2]</Var>
+		<Var Type="13" Flags="0" Access="98" RefId="4" Offset="2826" TopLevelType="27">.fbKNX2_Master_646.arOutputWord[3]</Var>
+		<Var Type="13" Flags="0" Access="98" RefId="4" Offset="2828" TopLevelType="27">.fbKNX2_Master_646.arOutputWord[4]</Var>
+		<Var Type="13" Flags="0" Access="98" RefId="4" Offset="2830" TopLevelType="27">.fbKNX2_Master_646.arOutputWord[5]</Var>
+		<Var Type="13" Flags="0" Access="98" RefId="4" Offset="2832" TopLevelType="27">.fbKNX2_Master_646.arOutputWord[6]</Var>
+		<Var Type="13" Flags="0" Access="98" RefId="4" Offset="2834" TopLevelType="27">.fbKNX2_Master_646.arOutputWord[7]</Var>
+		<Var Type="13" Flags="0" Access="98" RefId="4" Offset="2836" TopLevelType="27">.fbKNX2_Master_646.arOutputWord[8]</Var>
+		<Var Type="13" Flags="0" Access="98" RefId="4" Offset="2838" TopLevelType="27">.fbKNX2_Master_646.arOutputWord[9]</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2608" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[0].ERROR</Var>
+		<Var Type="13" Flags="2" Access="98" RefId="4" Offset="2606" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[0].VALUE</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2604" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[0].WORD_ADDRESS</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2688" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[10].ERROR</Var>
+		<Var Type="13" Flags="2" Access="98" RefId="4" Offset="2686" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[10].VALUE</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2684" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[10].WORD_ADDRESS</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2696" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[11].ERROR</Var>
+		<Var Type="13" Flags="2" Access="98" RefId="4" Offset="2694" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[11].VALUE</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2692" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[11].WORD_ADDRESS</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2616" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[1].ERROR</Var>
+		<Var Type="13" Flags="2" Access="98" RefId="4" Offset="2614" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[1].VALUE</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2612" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[1].WORD_ADDRESS</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2624" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[2].ERROR</Var>
+		<Var Type="13" Flags="2" Access="98" RefId="4" Offset="2622" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[2].VALUE</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2620" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[2].WORD_ADDRESS</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2632" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[3].ERROR</Var>
+		<Var Type="13" Flags="2" Access="98" RefId="4" Offset="2630" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[3].VALUE</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2628" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[3].WORD_ADDRESS</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2640" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[4].ERROR</Var>
+		<Var Type="13" Flags="2" Access="98" RefId="4" Offset="2638" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[4].VALUE</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2636" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[4].WORD_ADDRESS</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2648" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[5].ERROR</Var>
+		<Var Type="13" Flags="2" Access="98" RefId="4" Offset="2646" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[5].VALUE</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2644" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[5].WORD_ADDRESS</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2656" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[6].ERROR</Var>
+		<Var Type="13" Flags="2" Access="98" RefId="4" Offset="2654" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[6].VALUE</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2652" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[6].WORD_ADDRESS</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2664" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[7].ERROR</Var>
+		<Var Type="13" Flags="2" Access="98" RefId="4" Offset="2662" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[7].VALUE</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2660" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[7].WORD_ADDRESS</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2672" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[8].ERROR</Var>
+		<Var Type="13" Flags="2" Access="98" RefId="4" Offset="2670" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[8].VALUE</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2668" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[8].WORD_ADDRESS</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2680" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[9].ERROR</Var>
+		<Var Type="13" Flags="2" Access="98" RefId="4" Offset="2678" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[9].VALUE</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2676" TopLevelType="27">.fbKNX2_Master_646.arREAD_INPUT_WORD[9].WORD_ADDRESS</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2704" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[0].ERROR</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2702" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[0].VALUE</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2700" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[0].WORD_ADDRESS</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2784" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[10].ERROR</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2782" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[10].VALUE</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2780" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[10].WORD_ADDRESS</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2792" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[11].ERROR</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2790" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[11].VALUE</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2788" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[11].WORD_ADDRESS</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2712" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[1].ERROR</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2710" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[1].VALUE</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2708" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[1].WORD_ADDRESS</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2720" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[2].ERROR</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2718" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[2].VALUE</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2716" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[2].WORD_ADDRESS</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2728" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[3].ERROR</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2726" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[3].VALUE</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2724" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[3].WORD_ADDRESS</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2736" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[4].ERROR</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2734" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[4].VALUE</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2732" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[4].WORD_ADDRESS</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2744" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[5].ERROR</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2742" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[5].VALUE</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2740" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[5].WORD_ADDRESS</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2752" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[6].ERROR</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2750" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[6].VALUE</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2748" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[6].WORD_ADDRESS</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2760" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[7].ERROR</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2758" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[7].VALUE</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2756" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[7].WORD_ADDRESS</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2768" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[8].ERROR</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2766" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[8].VALUE</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2764" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[8].WORD_ADDRESS</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2776" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[9].ERROR</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2774" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[9].VALUE</Var>
+		<Var Type="13" Flags="1" Access="98" RefId="4" Offset="2772" TopLevelType="27">.fbKNX2_Master_646.arWRITE_OUTPUT_WORD[9].WORD_ADDRESS</Var>
+		<Var Type="3" Flags="1" Access="98" RefId="4" Offset="3052" TopLevelType="27">.fbKNX2_Master_646.bModule_753_646</Var>
+		<Var Type="1" Flags="1" Access="98" RefId="4" Offset="3025" TopLevelType="27">.fbKNX2_Master_646.Bus_PowerUp.CLK</Var>
+		<Var Type="1" Flags="0" Access="98" RefId="4" Offset="3024" TopLevelType="27">.fbKNX2_Master_646.Bus_PowerUp.M</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="3026" TopLevelType="27">.fbKNX2_Master_646.Bus_PowerUp.Q</Var>
+		<Var Type="3" Flags="4" Access="98" RefId="4" Offset="3036" TopLevelType="27">.fbKNX2_Master_646.C2K_DRW</Var>
+		<Var Type="3" Flags="4" Access="98" RefId="4" Offset="3038" TopLevelType="27">.fbKNX2_Master_646.C2K_ESYNC</Var>
+		<Var Type="3" Flags="4" Access="98" RefId="4" Offset="3037" TopLevelType="27">.fbKNX2_Master_646.C2K_SDEV</Var>
+		<Var Type="4" Flags="268435458" Access="98" RefId="4" Offset="3054" TopLevelType="27">.fbKNX2_Master_646.enumStatusKNX</Var>
+		<Var Type="1" Flags="0" Access="98" RefId="4" Offset="3032" TopLevelType="27">.fbKNX2_Master_646.Error</Var>
+		<Var Type="26" Flags="0" Access="98" RefId="4" Offset="3034" TopLevelType="27">.fbKNX2_Master_646.i</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="2603" TopLevelType="27">.fbKNX2_Master_646.info.desc.altFormat</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="2602" TopLevelType="27">.fbKNX2_Master_646.info.desc.channels</Var>
+		<Var Type="13" Flags="3" Access="98" RefId="4" Offset="2596" TopLevelType="27">.fbKNX2_Master_646.info.desc.posPAA</Var>
+		<Var Type="13" Flags="3" Access="98" RefId="4" Offset="2598" TopLevelType="27">.fbKNX2_Master_646.info.desc.posPAE</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="2600" TopLevelType="27">.fbKNX2_Master_646.info.desc.sizePAA</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="2601" TopLevelType="27">.fbKNX2_Master_646.info.desc.sizePAE</Var>
+		<Var Type="13" Flags="3" Access="98" RefId="4" Offset="2594" TopLevelType="27">.fbKNX2_Master_646.info.moduleType</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="2592" TopLevelType="27">.fbKNX2_Master_646.info.physicalPos</Var>
+		<Var Type="1" Flags="0" Access="98" RefId="4" Offset="3030" TopLevelType="27">.fbKNX2_Master_646.init</Var>
+		<Var Type="3" Flags="4" Access="98" RefId="4" Offset="3039" TopLevelType="27">.fbKNX2_Master_646.K2C_DRD</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="3029" TopLevelType="27">.fbKNX2_Master_646.mAnzahl</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2925" TopLevelType="27">.fbKNX2_Master_646.mRecState</Var>
+		<Var Type="3" Flags="0" Access="98" RefId="4" Offset="2924" TopLevelType="27">.fbKNX2_Master_646.mSendState</Var>
+		<Var Type="23" Flags="0" Access="98" RefId="4" Offset="2844" TopLevelType="27">.fbKNX2_Master_646.ptInData</Var>
+		<Var Type="24" Flags="0" Access="98" RefId="4" Offset="2848" TopLevelType="27">.fbKNX2_Master_646.ptOutData</Var>
+		<Var Type="1" Flags="0" Access="98" RefId="4" Offset="3031" TopLevelType="27">.fbKNX2_Master_646.StartSync</Var>
+		<Var Type="1" Flags="0" Access="98" RefId="4" Offset="3028" TopLevelType="27">.fbKNX2_Master_646.SyncEnd</Var>
+		<Var Type="0" Flags="2" Access="98" RefId="4" Offset="3020" TopLevelType="27">.fbKNX2_Master_646.TonError.ET</Var>
+		<Var Type="1" Flags="1" Access="98" RefId="4" Offset="3008" TopLevelType="27">.fbKNX2_Master_646.TonError.IN</Var>
+		<Var Type="1" Flags="0" Access="98" RefId="4" Offset="3000" TopLevelType="27">.fbKNX2_Master_646.TonError.M</Var>
+		<Var Type="0" Flags="1" Access="98" RefId="4" Offset="3012" TopLevelType="27">.fbKNX2_Master_646.TonError.PT</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="3016" TopLevelType="27">.fbKNX2_Master_646.TonError.Q</Var>
+		<Var Type="0" Flags="0" Access="98" RefId="4" Offset="3004" TopLevelType="27">.fbKNX2_Master_646.TonError.StartTime</Var>
+		<Var Type="0" Flags="2" Access="98" RefId="4" Offset="2948" TopLevelType="27">.fbKNX2_Master_646.TONTimeOut.ET</Var>
+		<Var Type="1" Flags="1" Access="98" RefId="4" Offset="2936" TopLevelType="27">.fbKNX2_Master_646.TONTimeOut.IN</Var>
+		<Var Type="1" Flags="0" Access="98" RefId="4" Offset="2928" TopLevelType="27">.fbKNX2_Master_646.TONTimeOut.M</Var>
+		<Var Type="0" Flags="1" Access="98" RefId="4" Offset="2940" TopLevelType="27">.fbKNX2_Master_646.TONTimeOut.PT</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2944" TopLevelType="27">.fbKNX2_Master_646.TONTimeOut.Q</Var>
+		<Var Type="0" Flags="0" Access="98" RefId="4" Offset="2932" TopLevelType="27">.fbKNX2_Master_646.TONTimeOut.StartTime</Var>
+		<Var Type="0" Flags="2" Access="98" RefId="4" Offset="2996" TopLevelType="27">.fbKNX2_Master_646.TonTimeOutRec.ET</Var>
+		<Var Type="1" Flags="1" Access="98" RefId="4" Offset="2984" TopLevelType="27">.fbKNX2_Master_646.TonTimeOutRec.IN</Var>
+		<Var Type="1" Flags="0" Access="98" RefId="4" Offset="2976" TopLevelType="27">.fbKNX2_Master_646.TonTimeOutRec.M</Var>
+		<Var Type="0" Flags="1" Access="98" RefId="4" Offset="2988" TopLevelType="27">.fbKNX2_Master_646.TonTimeOutRec.PT</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2992" TopLevelType="27">.fbKNX2_Master_646.TonTimeOutRec.Q</Var>
+		<Var Type="0" Flags="0" Access="98" RefId="4" Offset="2980" TopLevelType="27">.fbKNX2_Master_646.TonTimeOutRec.StartTime</Var>
+		<Var Type="0" Flags="2" Access="98" RefId="4" Offset="2972" TopLevelType="27">.fbKNX2_Master_646.TONTimeOutSync.ET</Var>
+		<Var Type="1" Flags="1" Access="98" RefId="4" Offset="2960" TopLevelType="27">.fbKNX2_Master_646.TONTimeOutSync.IN</Var>
+		<Var Type="1" Flags="0" Access="98" RefId="4" Offset="2952" TopLevelType="27">.fbKNX2_Master_646.TONTimeOutSync.M</Var>
+		<Var Type="0" Flags="1" Access="98" RefId="4" Offset="2964" TopLevelType="27">.fbKNX2_Master_646.TONTimeOutSync.PT</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2968" TopLevelType="27">.fbKNX2_Master_646.TONTimeOutSync.Q</Var>
+		<Var Type="0" Flags="0" Access="98" RefId="4" Offset="2956" TopLevelType="27">.fbKNX2_Master_646.TONTimeOutSync.StartTime</Var>
+		<Var Type="0" Flags="2" Access="98" RefId="4" Offset="2920" TopLevelType="27">.fbKNX2_Master_646.TONWait.ET</Var>
+		<Var Type="1" Flags="1" Access="98" RefId="4" Offset="2908" TopLevelType="27">.fbKNX2_Master_646.TONWait.IN</Var>
+		<Var Type="1" Flags="0" Access="98" RefId="4" Offset="2900" TopLevelType="27">.fbKNX2_Master_646.TONWait.M</Var>
+		<Var Type="0" Flags="1" Access="98" RefId="4" Offset="2912" TopLevelType="27">.fbKNX2_Master_646.TONWait.PT</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="2916" TopLevelType="27">.fbKNX2_Master_646.TONWait.Q</Var>
+		<Var Type="0" Flags="0" Access="98" RefId="4" Offset="2904" TopLevelType="27">.fbKNX2_Master_646.TONWait.StartTime</Var>
+		<Var Type="0" Flags="4" Access="98" RefId="4" Offset="3044" TopLevelType="27">.fbKNX2_Master_646.tTime</Var>
+		<Var Type="0" Flags="4" Access="98" RefId="4" Offset="3048" TopLevelType="27">.fbKNX2_Master_646.tTimeSync</Var>
+		<Var Type="0" Flags="4" Access="98" RefId="4" Offset="3040" TopLevelType="27">.fbKNX2_Master_646.tWaitTime</Var>
+		<Var Type="11" Flags="268436483" Access="98" RefId="4" Offset="3060" TopLevelType="27">.fbKNX2_Master_646.typKNX</Var>
+		<Var Type="1" Flags="2" Access="98" RefId="4" Offset="3056" TopLevelType="27">.fbKNX2_Master_646.xProg_Mode</Var>
+		<Var Type="28" Flags="33554500" Access="98" RefId="4" Offset="680">.rVersion</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3120" TopLevelType="10">.typKNX1.bError</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3068" TopLevelType="10">.typKNX1.bHW_type</Var>
+		<Var Type="7" Flags="3" Access="98" RefId="4" Offset="3064" TopLevelType="10">.typKNX1.dwCRC</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3104" TopLevelType="10">.typKNX1.typModule_646.arDATA_IN[0]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3114" TopLevelType="10">.typKNX1.typModule_646.arDATA_IN[10]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3115" TopLevelType="10">.typKNX1.typModule_646.arDATA_IN[11]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3116" TopLevelType="10">.typKNX1.typModule_646.arDATA_IN[12]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3117" TopLevelType="10">.typKNX1.typModule_646.arDATA_IN[13]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3118" TopLevelType="10">.typKNX1.typModule_646.arDATA_IN[14]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3105" TopLevelType="10">.typKNX1.typModule_646.arDATA_IN[1]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3106" TopLevelType="10">.typKNX1.typModule_646.arDATA_IN[2]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3107" TopLevelType="10">.typKNX1.typModule_646.arDATA_IN[3]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3108" TopLevelType="10">.typKNX1.typModule_646.arDATA_IN[4]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3109" TopLevelType="10">.typKNX1.typModule_646.arDATA_IN[5]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3110" TopLevelType="10">.typKNX1.typModule_646.arDATA_IN[6]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3111" TopLevelType="10">.typKNX1.typModule_646.arDATA_IN[7]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3112" TopLevelType="10">.typKNX1.typModule_646.arDATA_IN[8]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3113" TopLevelType="10">.typKNX1.typModule_646.arDATA_IN[9]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3089" TopLevelType="10">.typKNX1.typModule_646.arDATA_OUT[0]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3099" TopLevelType="10">.typKNX1.typModule_646.arDATA_OUT[10]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3100" TopLevelType="10">.typKNX1.typModule_646.arDATA_OUT[11]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3101" TopLevelType="10">.typKNX1.typModule_646.arDATA_OUT[12]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3102" TopLevelType="10">.typKNX1.typModule_646.arDATA_OUT[13]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3103" TopLevelType="10">.typKNX1.typModule_646.arDATA_OUT[14]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3090" TopLevelType="10">.typKNX1.typModule_646.arDATA_OUT[1]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3091" TopLevelType="10">.typKNX1.typModule_646.arDATA_OUT[2]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3092" TopLevelType="10">.typKNX1.typModule_646.arDATA_OUT[3]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3093" TopLevelType="10">.typKNX1.typModule_646.arDATA_OUT[4]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3094" TopLevelType="10">.typKNX1.typModule_646.arDATA_OUT[5]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3095" TopLevelType="10">.typKNX1.typModule_646.arDATA_OUT[6]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3096" TopLevelType="10">.typKNX1.typModule_646.arDATA_OUT[7]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3097" TopLevelType="10">.typKNX1.typModule_646.arDATA_OUT[8]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3098" TopLevelType="10">.typKNX1.typModule_646.arDATA_OUT[9]</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3088" TopLevelType="10">.typKNX1.typModule_646.bBytesToSend</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3073" TopLevelType="10">.typKNX1.typModule_646.bCurrent_Pos</Var>
+		<Var Type="3" Flags="3" Access="98" RefId="4" Offset="3072" TopLevelType="10">.typKNX1.typModule_646.bNumber</Var>
+		<Var Type="7" Flags="3" Access="98" RefId="4" Offset="3080" TopLevelType="10">.typKNX1.typModule_646.dwReceAddr</Var>
+		<Var Type="7" Flags="3" Access="98" RefId="4" Offset="3076" TopLevelType="10">.typKNX1.typModule_646.dwSendAddr</Var>
+		<Var Type="1" Flags="3" Access="98" RefId="4" Offset="3084" TopLevelType="10">.typKNX1.typModule_646.xBusy</Var>
+		<Var Type="1" Flags="3" Access="98" RefId="4" Offset="3085" TopLevelType="10">.typKNX1.typModule_646.xNewData</Var>
+		<Var Type="1" Flags="3" Access="98" RefId="4" Offset="3086" TopLevelType="10">.typKNX1.typModule_646.xSendOnReset</Var>
+		<Var Type="1" Flags="3" Access="98" RefId="4" Offset="3087" TopLevelType="10">.typKNX1.typModule_646.xSyncReady</Var>
+		<Var Type="1" Flags="33554496" Access="98" RefId="4" Offset="2533">.xProg_Mode</Var>
+	</SymbolVarList>
+	<SymbolTaskList/>
+	<SymbolTargetSettings>
+		<MaxNumberOfPOUs>1023</MaxNumberOfPOUs>
+		<Segments>
+			<Segment Area="-1" RefId="0" Address="805306368" Size="8192" Attributes="0"/>
+			<Segment Area="-1" RefId="1" Address="80533520" Size="3064" Attributes="0"/>
+			<Segment Area="-1" RefId="2" Address="80538632" Size="3064" Attributes="0"/>
+			<Segment Area="-1" RefId="3" Address="805314560" Size="16384" Attributes="2"/>
+			<Segment Area="0" RefId="4" Address="0" Size="249856" Attributes="1"/>
+		</Segments>
+	</SymbolTargetSettings>
+</CoDeSysSymbolTable>
