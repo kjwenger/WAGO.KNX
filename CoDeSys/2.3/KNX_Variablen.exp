@@ -1,15 +1,10 @@
 VAR_GLOBAL
-	fbKNX1_Master_849: FbKNX_Master_849;
+	KNX1_Master_646: FbKNX_Master_646;
 	xProg_ModeKNX1: BOOL;
-	enumDeviceStatusKNX1: enumDeviceStatus;
+	enumStatusKNX1: enumStatusKNX;
 	typKNX1: typKNX;
 
-	fbKNX2_Master_646: FbKNX_Master_646;
-	xProg_ModeKNX2: BOOL;
-	enumStatusKNX1: enumStatusKNX;
-	typKNX2: typKNX;
-
-	fbKNX21Sunblind_actuator_4: FbSunblind_actuator_4;
+	M1_001_Sunblind_actuator_4: FbSunblind_actuator_4;
 
 	xBlind1_Pushbutton_UP_0: BOOL;
 	xBlind1_Pushbutton_UP_1: BOOL;

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbolconfiguration xmlns="http://www.3s-software.com/schemas/Symbolconfiguration.xsd">
+  <Header>
+    <Version>3.5.14.0</Version>
+    <SymbolConfigObject version="4.0.0.0" runtimeid="3.5.16.3" libversion="3.5.16.0" compiler="3.5.16.32" lmm="3.5.17.0" profile="e!COCKPIT+" settings="LayoutCalculator=OptimizedClientSideLayoutCalculator" />
+    <ProjectInfo name="WagoAppKNX" devicename="PFC200_2ETH_RS_1" appname="Firmware_19" />
+  </Header>
+  <TypeList>
+    <TypeSimple name="T_BOOL" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" />
+    <TypeSimple name="T_BYTE" size="1" swapsize="1" typeclass="Byte" iecname="BYTE" />
+    <TypeSimple name="T_DWORD" size="4" swapsize="4" typeclass="DWord" iecname="DWORD" />
+    <TypeSimple name="T_TIME" size="4" swapsize="4" typeclass="Time" iecname="TIME" />
+    <TypeSimple name="T_WORD" size="2" swapsize="2" typeclass="Word" iecname="WORD" />
+    <TypeArray name="T_ARRAY__0__14__OF_BYTE" size="15" nativesize="15" typeclass="Array" iecname="ARRAY [0..14] OF BYTE" basetype="T_BYTE">
+      <ArrayDim minrange="0" maxrange="14" />
+    </TypeArray>
+    <TypeUserDef name="T_R_TRIG" size="2" nativesize="8" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="R_TRIG">
+      <UserDefElement iecname="CLK" type="T_BOOL" byteoffset="0" vartype="VAR_INPUT" />
+      <UserDefElement iecname="Q" type="T_BOOL" byteoffset="1" vartype="VAR_OUTPUT" />
+    </TypeUserDef>
+    <TypeUserDef name="T_TOF" size="16" nativesize="28" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="TOF">
+      <UserDefElement iecname="IN" type="T_BOOL" byteoffset="0" vartype="VAR_INPUT" />
+      <UserDefElement iecname="PT" type="T_TIME" byteoffset="4" vartype="VAR_INPUT" />
+      <UserDefElement iecname="Q" type="T_BOOL" byteoffset="8" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="ET" type="T_TIME" byteoffset="12" vartype="VAR_OUTPUT" />
+    </TypeUserDef>
+    <TypeUserDef name="T_typDPT" size="15" nativesize="15" typeclass="Userdef" pouclass="STRUCTURE" iecname="typDPT">
+      <UserDefElement iecname="arDPT" type="T_ARRAY__0__14__OF_BYTE" byteoffset="0" vartype="VAR" />
+    </TypeUserDef>
+    <TypeSimple name="T_REFERENCE_TO_typDPT_REF" size="15" swapsize="0" typeclass="Reference" iecname="REFERENCE TO typDPT_REF" basetype="T_typDPT" />
+    <TypeUserDef name="T_FbDPT_ID_2_ext" size="90" nativesize="108" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="FbDPT_ID_2_ext">
+      <UserDefElement iecname="bPortKNX" type="T_BYTE" byteoffset="0" vartype="VAR_INPUT" />
+      <UserDefElement iecname="dwIndex_DPT" type="T_DWORD" byteoffset="4" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xSwitch_IN" type="T_BOOL" byteoffset="8" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xControl_IN" type="T_BOOL" byteoffset="9" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xUpdate_KNX" type="T_BOOL" byteoffset="10" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xRead_KNX" type="T_BOOL" byteoffset="11" vartype="VAR_INPUT" />
+      <UserDefElement iecname="tMinSendTime" type="T_TIME" byteoffset="12" vartype="VAR_INPUT" />
+      <UserDefElement iecname="typDPT" type="T_typDPT" byteoffset="16" vartype="VAR_IN_OUT" />
+      <UserDefElement iecname="xSwitch_OUT" type="T_BOOL" byteoffset="31" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="xControl_OUT" type="T_BOOL" byteoffset="32" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="xUpdate_PLC" type="T_BOOL" byteoffset="33" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="xTimeOut" type="T_BOOL" byteoffset="34" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="dwAdresse" type="T_DWORD" byteoffset="36" vartype="VAR" />
+      <UserDefElement iecname="dwAdresse_OLD" type="T_DWORD" byteoffset="40" vartype="VAR" />
+      <UserDefElement iecname="R_TRIGUpdate" type="T_R_TRIG" byteoffset="44" vartype="VAR" />
+      <UserDefElement iecname="R_TRIGRead" type="T_R_TRIG" byteoffset="46" vartype="VAR" />
+      <UserDefElement iecname="Init" type="T_BOOL" byteoffset="48" vartype="VAR" />
+      <UserDefElement iecname="xSwitch_IN_old" type="T_BOOL" byteoffset="49" vartype="VAR" />
+      <UserDefElement iecname="xControl_IN_old" type="T_BOOL" byteoffset="50" vartype="VAR" />
+      <UserDefElement iecname="Merker" type="T_BOOL" byteoffset="51" vartype="VAR" />
+      <UserDefElement iecname="wPos" type="T_WORD" byteoffset="52" vartype="VAR" />
+      <UserDefElement iecname="DPT_ARRAY" type="T_ARRAY__0__14__OF_BYTE" byteoffset="54" vartype="VAR" />
+      <UserDefElement iecname="i" type="T_BYTE" byteoffset="69" vartype="VAR" />
+      <UserDefElement iecname="x" type="T_BYTE" byteoffset="70" vartype="VAR" />
+      <UserDefElement iecname="MinSendTOF" type="T_TOF" byteoffset="72" vartype="VAR" />
+      <UserDefElement iecname="Update" type="T_BOOL" byteoffset="88" vartype="VAR" />
+      <UserDefElement iecname="xRead" type="T_BOOL" byteoffset="89" vartype="VAR" />
+    </TypeUserDef>
+    <TypeUserDef name="T_FbDPT_ID_2" size="126" nativesize="148" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="FbDPT_ID_2">
+      <UserDefElement iecname="bPortKNX" type="T_BYTE" byteoffset="0" vartype="VAR_INPUT" />
+      <UserDefElement iecname="dwIndex_DPT" type="T_DWORD" byteoffset="4" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xSwitch_IN" type="T_BOOL" byteoffset="8" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xControl_IN" type="T_BOOL" byteoffset="9" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xUpdate_KNX" type="T_BOOL" byteoffset="10" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xSwitch_OUT" type="T_BOOL" byteoffset="11" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="xControl_OUT" type="T_BOOL" byteoffset="12" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="xUpdate_PLC" type="T_BOOL" byteoffset="13" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="typDPT" type="T_typDPT" byteoffset="14" vartype="VAR" />
+      <UserDefElement iecname="xTimeOut" type="T_BOOL" byteoffset="29" vartype="VAR" />
+      <UserDefElement iecname="xRead_KNX" type="T_BOOL" byteoffset="30" vartype="VAR" />
+      <UserDefElement iecname="tMinSendTime" type="T_TIME" byteoffset="32" vartype="VAR" />
+      <UserDefElement iecname="H1" type="T_FbDPT_ID_2_ext" byteoffset="36" vartype="VAR" />
+    </TypeUserDef>
+    <TypeUserDef name="T_FbDPT_Switch_Control" size="126" nativesize="148" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="FbDPT_Switch_Control" basetype="T_FbDPT_ID_2">
+      <UserDefElement iecname="bPortKNX" type="T_BYTE" byteoffset="0" vartype="VAR_INPUT" inherited_from="T_FbDPT_ID_2" />
+      <UserDefElement iecname="dwIndex_DPT" type="T_DWORD" byteoffset="4" vartype="VAR_INPUT" inherited_from="T_FbDPT_ID_2" />
+      <UserDefElement iecname="xSwitch_IN" type="T_BOOL" byteoffset="8" vartype="VAR_INPUT" inherited_from="T_FbDPT_ID_2" />
+      <UserDefElement iecname="xControl_IN" type="T_BOOL" byteoffset="9" vartype="VAR_INPUT" inherited_from="T_FbDPT_ID_2" />
+      <UserDefElement iecname="xUpdate_KNX" type="T_BOOL" byteoffset="10" vartype="VAR_INPUT" inherited_from="T_FbDPT_ID_2" />
+      <UserDefElement iecname="xSwitch_OUT" type="T_BOOL" byteoffset="11" vartype="VAR_OUTPUT" inherited_from="T_FbDPT_ID_2" />
+      <UserDefElement iecname="xControl_OUT" type="T_BOOL" byteoffset="12" vartype="VAR_OUTPUT" inherited_from="T_FbDPT_ID_2" />
+      <UserDefElement iecname="xUpdate_PLC" type="T_BOOL" byteoffset="13" vartype="VAR_OUTPUT" inherited_from="T_FbDPT_ID_2" />
+      <UserDefElement iecname="typDPT" type="T_typDPT" byteoffset="14" vartype="VAR" inherited_from="T_FbDPT_ID_2" />
+      <UserDefElement iecname="xTimeOut" type="T_BOOL" byteoffset="29" vartype="VAR" inherited_from="T_FbDPT_ID_2" />
+      <UserDefElement iecname="xRead_KNX" type="T_BOOL" byteoffset="30" vartype="VAR" inherited_from="T_FbDPT_ID_2" />
+      <UserDefElement iecname="tMinSendTime" type="T_TIME" byteoffset="32" vartype="VAR" inherited_from="T_FbDPT_ID_2" />
+      <UserDefElement iecname="H1" type="T_FbDPT_ID_2_ext" byteoffset="36" vartype="VAR" inherited_from="T_FbDPT_ID_2" />
+    </TypeUserDef>
+  </TypeList>
+  <NodeList>
+    <Node name="Firmware_19">
+      <Node name="PLC_PRG">
+        <Node name="M1_001_DPT_Switch_Control" type="T_FbDPT_Switch_Control" access="ReadWrite" />
+      </Node>
+    </Node>
+  </NodeList>
+</Symbolconfiguration>
