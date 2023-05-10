@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbolconfiguration xmlns="http://www.3s-software.com/schemas/Symbolconfiguration.xsd">
+  <Header>
+    <Version>3.5.14.0</Version>
+    <SymbolConfigObject version="4.0.0.0" runtimeid="3.5.16.3" libversion="3.5.16.0" compiler="3.5.16.32" lmm="3.5.17.0" profile="e!COCKPIT+" settings="LayoutCalculator=OptimizedClientSideLayoutCalculator" />
+    <ProjectInfo name="WagoAppKNX.Firmware_19" devicename="PFC200_2ETH_RS" appname="Application" />
+  </Header>
+  <TypeList>
+    <TypeSimple name="T_BOOL" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" />
+    <TypeSimple name="T_BYTE" size="1" swapsize="1" typeclass="Byte" iecname="BYTE" />
+    <TypeSimple name="T_DINT" size="4" swapsize="4" typeclass="DInt" iecname="DINT" />
+    <TypeSimple name="T_DWORD" size="4" swapsize="4" typeclass="DWord" iecname="DWORD" />
+    <TypeSimple name="T_INT" size="2" swapsize="2" typeclass="Int" iecname="INT" />
+    <TypeSimple name="T_REAL" size="4" swapsize="4" typeclass="Real" iecname="REAL" />
+    <TypeSimple name="T_STRING" size="81" swapsize="0" typeclass="String" iecname="STRING" />
+    <TypeSimple name="T_STRING_10_" size="11" swapsize="0" typeclass="String" iecname="STRING(10)" />
+    <TypeSimple name="T_STRING_17_" size="18" swapsize="0" typeclass="String" iecname="STRING(17)" />
+    <TypeSimple name="T_STRING_255_" size="256" swapsize="0" typeclass="String" iecname="STRING(255)" />
+    <TypeSimple name="T_TIME" size="4" swapsize="4" typeclass="Time" iecname="TIME" />
+    <TypeSimple name="T_UINT" size="2" swapsize="2" typeclass="UInt" iecname="UINT" />
+    <TypeSimple name="T_WORD" size="2" swapsize="2" typeclass="Word" iecname="WORD" />
+    <TypeArray name="T_ARRAY__0__0__OF_STRING_17_" size="18" nativesize="18" typeclass="Array" iecname="ARRAY [0..0] OF STRING(17)" basetype="T_STRING_17_">
+      <ArrayDim minrange="0" maxrange="0" />
+    </TypeArray>
+    <TypeArray name="T_ARRAY__0__14__OF_BYTE" size="15" nativesize="15" typeclass="Array" iecname="ARRAY [0..14] OF BYTE" basetype="T_BYTE">
+      <ArrayDim minrange="0" maxrange="14" />
+    </TypeArray>
+    <TypeArray name="T_ARRAY__0__15__OF_BOOL" size="16" nativesize="16" typeclass="Array" iecname="ARRAY [0..15] OF BOOL" basetype="T_BOOL">
+      <ArrayDim minrange="0" maxrange="15" />
+    </TypeArray>
+    <TypeArray name="T_ARRAY__0__15__OF_STRING_17_" size="288" nativesize="288" typeclass="Array" iecname="ARRAY [0..15] OF STRING(17)" basetype="T_STRING_17_">
+      <ArrayDim minrange="0" maxrange="15" />
+    </TypeArray>
+    <TypeArray name="T_ARRAY__0__23__OF_BYTE" size="24" nativesize="24" typeclass="Array" iecname="ARRAY [0..23] OF BYTE" basetype="T_BYTE">
+      <ArrayDim minrange="0" maxrange="23" />
+    </TypeArray>
+    <TypeArray name="T_ARRAY__1__1__OF_BOOL" size="1" nativesize="1" typeclass="Array" iecname="ARRAY [1..1] OF BOOL" basetype="T_BOOL">
+      <ArrayDim minrange="1" maxrange="1" />
+    </TypeArray>
+    <TypeArray name="T_ARRAY__1__1__OF_BYTE" size="1" nativesize="1" typeclass="Array" iecname="ARRAY [1..1] OF BYTE" basetype="T_BYTE">
+      <ArrayDim minrange="1" maxrange="1" />
+    </TypeArray>
+    <TypeSimple name="T_POINTER_TO_BYTE" size="4" swapsize="4" typeclass="Pointer" iecname="POINTER TO BYTE" />
+    <TypeSimple name="T_POINTER_TO_STRING" size="4" swapsize="4" typeclass="Pointer" iecname="POINTER TO STRING" />
+    <TypeUserDef name="T_R_TRIG" size="2" nativesize="8" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="R_TRIG">
+      <UserDefElement iecname="CLK" type="T_BOOL" byteoffset="0" vartype="VAR_INPUT" />
+      <UserDefElement iecname="Q" type="T_BOOL" byteoffset="1" vartype="VAR_OUTPUT" />
+    </TypeUserDef>
+    <TypeUserDef name="T_TOF" size="16" nativesize="28" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="TOF">
+      <UserDefElement iecname="IN" type="T_BOOL" byteoffset="0" vartype="VAR_INPUT" />
+      <UserDefElement iecname="PT" type="T_TIME" byteoffset="4" vartype="VAR_INPUT" />
+      <UserDefElement iecname="Q" type="T_BOOL" byteoffset="8" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="ET" type="T_TIME" byteoffset="12" vartype="VAR_OUTPUT" />
+    </TypeUserDef>
+    <TypeUserDef name="T_TON" size="16" nativesize="28" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="TON">
+      <UserDefElement iecname="IN" type="T_BOOL" byteoffset="0" vartype="VAR_INPUT" />
+      <UserDefElement iecname="PT" type="T_TIME" byteoffset="4" vartype="VAR_INPUT" />
+      <UserDefElement iecname="Q" type="T_BOOL" byteoffset="8" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="ET" type="T_TIME" byteoffset="12" vartype="VAR_OUTPUT" />
+    </TypeUserDef>
+    <TypeUserDef name="T_eSeverity" size="4" nativesize="4" swapsize="4" typeclass="Enum" iecname="eSeverity" basetype="T_DWORD">
+      <UserDefElement type="T_eSeverity" iecname="none" enumvalue="0" />
+      <UserDefElement type="T_eSeverity" iecname="info" enumvalue="1" />
+      <UserDefElement type="T_eSeverity" iecname="warning" enumvalue="2" />
+      <UserDefElement type="T_eSeverity" iecname="error" enumvalue="4" />
+      <UserDefElement type="T_eSeverity" iecname="exception" enumvalue="8" />
+      <UserDefElement type="T_eSeverity" iecname="debug" enumvalue="16" />
+      <UserDefElement type="T_eSeverity" iecname="all" enumvalue="31" />
+      <UserDefElement type="T_eSeverity" iecname="unknown" enumvalue="64" />
+      <UserDefElement type="T_eSeverity" iecname="volatile" enumvalue="128" />
+    </TypeUserDef>
+    <TypeUserDef name="T_typConfigSunshade" size="31" nativesize="32" typeclass="Userdef" pouclass="STRUCTURE" iecname="typConfigSunshade">
+      <UserDefElement iecname="tTotalRunningTimeUp" type="T_TIME" byteoffset="0" vartype="VAR" />
+      <UserDefElement iecname="tTotalRunningTimeDown" type="T_TIME" byteoffset="4" vartype="VAR" />
+      <UserDefElement iecname="tReverseIdleTime" type="T_TIME" byteoffset="8" vartype="VAR" />
+      <UserDefElement iecname="tMechanicReverseTime" type="T_TIME" byteoffset="12" vartype="VAR" />
+      <UserDefElement iecname="tTotalRunningTimeLamella" type="T_TIME" byteoffset="16" vartype="VAR" />
+      <UserDefElement iecname="tShortPushButton" type="T_TIME" byteoffset="20" vartype="VAR" />
+      <UserDefElement iecname="tTimeManualOverride" type="T_TIME" byteoffset="24" vartype="VAR" />
+      <UserDefElement iecname="bLamellaSteps" type="T_BYTE" byteoffset="28" vartype="VAR" />
+      <UserDefElement iecname="bType" type="T_BYTE" byteoffset="29" vartype="VAR" />
+      <UserDefElement iecname="xAutoMoveUP" type="T_BOOL" byteoffset="30" vartype="VAR" />
+    </TypeUserDef>
+    <TypeUserDef name="T_typSunshade" size="5" nativesize="6" typeclass="Userdef" pouclass="STRUCTURE" iecname="typSunshade">
+      <UserDefElement iecname="wPositionBlind" type="T_WORD" byteoffset="0" vartype="VAR" />
+      <UserDefElement iecname="wPositionLamella" type="T_WORD" byteoffset="2" vartype="VAR" />
+      <UserDefElement iecname="xMove" type="T_BOOL" byteoffset="4" vartype="VAR" />
+    </TypeUserDef>
+    <TypeUserDef name="T_typSunshadePosition" size="8" nativesize="8" typeclass="Userdef" pouclass="STRUCTURE" iecname="typSunshadePosition">
+      <UserDefElement iecname="rPositionBlind" type="T_REAL" byteoffset="0" vartype="VAR" />
+      <UserDefElement iecname="rPositionLamella" type="T_REAL" byteoffset="4" vartype="VAR" />
+    </TypeUserDef>
+    <TypeArray name="T_ARRAY__1__1__OF_TOF" size="16" nativesize="28" typeclass="Array" iecname="ARRAY [1..1] OF TOF" basetype="T_TOF">
+      <ArrayDim minrange="1" maxrange="1" />
+    </TypeArray>
+    <TypeArray name="T_ARRAY__1__1__OF_TON" size="16" nativesize="28" typeclass="Array" iecname="ARRAY [1..1] OF TON" basetype="T_TON">
+      <ArrayDim minrange="1" maxrange="1" />
+    </TypeArray>
+    <TypeUserDef name="T_FbResultFactory" size="290" nativesize="300" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="FbResultFactory">
+      <UserDefElement iecname="m_instancepath" type="T_STRING_255_" byteoffset="0" vartype="VAR" />
+      <UserDefElement iecname="INITNAME" type="T_STRING_10_" byteoffset="256" vartype="VAR" />
+      <UserDefElement iecname="pProducerName" type="T_POINTER_TO_STRING" byteoffset="268" vartype="VAR_INPUT" />
+      <UserDefElement iecname="pResultList" type="T_POINTER_TO_BYTE" byteoffset="272" vartype="VAR_INPUT" />
+      <UserDefElement iecname="uiSizeOfResultList" type="T_UINT" byteoffset="276" vartype="VAR_INPUT" />
+      <UserDefElement iecname="m_pProducerName" type="T_POINTER_TO_STRING" byteoffset="280" vartype="VAR" />
+      <UserDefElement iecname="m_pResultList" type="T_POINTER_TO_BYTE" byteoffset="284" vartype="VAR" />
+      <UserDefElement iecname="m_uiSizeOfResultList" type="T_UINT" byteoffset="288" vartype="VAR" />
+    </TypeUserDef>
+    <TypeUserDef name="T_typDPT" size="15" nativesize="15" typeclass="Userdef" pouclass="STRUCTURE" iecname="typDPT">
+      <UserDefElement iecname="arDPT" type="T_ARRAY__0__14__OF_BYTE" byteoffset="0" vartype="VAR" />
+    </TypeUserDef>
+    <TypeUserDef name="T_typSunblindChannel" size="68" nativesize="72" typeclass="Userdef" pouclass="STRUCTURE" iecname="typSunblindChannel">
+      <UserDefElement iecname="bSunDirection" type="T_BYTE" byteoffset="0" vartype="VAR" />
+      <UserDefElement iecname="xCentralUPDown" type="T_BOOL" byteoffset="1" vartype="VAR" />
+      <UserDefElement iecname="typSunshadePosition" type="T_typSunshadePosition" byteoffset="4" vartype="VAR" />
+      <UserDefElement iecname="typAutomaticSunshade" type="T_typSunshade" byteoffset="12" vartype="VAR" />
+      <UserDefElement iecname="typMaintenanceSunshade" type="T_typSunshade" byteoffset="18" vartype="VAR" />
+      <UserDefElement iecname="typSetSunshade" type="T_typSunshade" byteoffset="24" vartype="VAR" />
+      <UserDefElement iecname="typConfigSunshade" type="T_typConfigSunshade" byteoffset="32" vartype="VAR" />
+      <UserDefElement iecname="xLockPosition" type="T_BOOL" byteoffset="63" vartype="VAR" />
+      <UserDefElement iecname="xOverride" type="T_BOOL" byteoffset="64" vartype="VAR" />
+      <UserDefElement iecname="xResetOverride" type="T_BOOL" byteoffset="65" vartype="VAR" />
+      <UserDefElement iecname="InitPersistent" type="T_BOOL" byteoffset="66" vartype="VAR" />
+      <UserDefElement iecname="bButtonMode" type="T_BYTE" byteoffset="67" vartype="VAR" />
+    </TypeUserDef>
+    <TypeUserDef name="T_typSunblindChannelVisu" size="414" nativesize="416" typeclass="Userdef" pouclass="STRUCTURE" iecname="typSunblindChannelVisu">
+      <UserDefElement iecname="asLabel" type="T_ARRAY__0__15__OF_STRING_17_" byteoffset="0" vartype="VAR" />
+      <UserDefElement iecname="bSunDirection" type="T_BYTE" byteoffset="288" vartype="VAR" />
+      <UserDefElement iecname="xCentralUPDown" type="T_BOOL" byteoffset="289" vartype="VAR" />
+      <UserDefElement iecname="rPosBlind" type="T_REAL" byteoffset="292" vartype="VAR" />
+      <UserDefElement iecname="rPosLamella" type="T_REAL" byteoffset="296" vartype="VAR" />
+      <UserDefElement iecname="xStatusUp" type="T_BOOL" byteoffset="300" vartype="VAR" />
+      <UserDefElement iecname="xStatusDown" type="T_BOOL" byteoffset="301" vartype="VAR" />
+      <UserDefElement iecname="typAutomaticSunshade" type="T_typSunshade" byteoffset="302" vartype="VAR" />
+      <UserDefElement iecname="typMaintenanceSunshade" type="T_typSunshade" byteoffset="308" vartype="VAR" />
+      <UserDefElement iecname="typSetSunshade" type="T_typSunshade" byteoffset="314" vartype="VAR" />
+      <UserDefElement iecname="typConfigSunshade" type="T_typConfigSunshade" byteoffset="320" vartype="VAR" />
+      <UserDefElement iecname="Anzahl_Visu" type="T_INT" byteoffset="352" vartype="VAR" />
+      <UserDefElement iecname="m1" type="T_INT" byteoffset="354" vartype="VAR" />
+      <UserDefElement iecname="xDelete" type="T_BOOL" byteoffset="356" vartype="VAR" />
+      <UserDefElement iecname="xWrite" type="T_BOOL" byteoffset="357" vartype="VAR" />
+      <UserDefElement iecname="xOverride" type="T_BOOL" byteoffset="358" vartype="VAR" />
+      <UserDefElement iecname="xResetOverride" type="T_BOOL" byteoffset="359" vartype="VAR" />
+      <UserDefElement iecname="xUP_Visu" type="T_BOOL" byteoffset="360" vartype="VAR" />
+      <UserDefElement iecname="xDOWN_Visu" type="T_BOOL" byteoffset="361" vartype="VAR" />
+      <UserDefElement iecname="xSetDefault" type="T_BOOL" byteoffset="362" vartype="VAR" />
+      <UserDefElement iecname="xShowBanner" type="T_BOOL" byteoffset="363" vartype="VAR" />
+      <UserDefElement iecname="xSafetyPosition" type="T_BOOL" byteoffset="364" vartype="VAR" />
+      <UserDefElement iecname="axSetMaintenance" type="T_ARRAY__0__15__OF_BOOL" byteoffset="365" vartype="VAR" />
+      <UserDefElement iecname="axSetPosition" type="T_ARRAY__0__15__OF_BOOL" byteoffset="381" vartype="VAR" />
+      <UserDefElement iecname="axLockBlind" type="T_ARRAY__0__15__OF_BOOL" byteoffset="397" vartype="VAR" />
+      <UserDefElement iecname="bButtonMode" type="T_BYTE" byteoffset="413" vartype="VAR" />
+    </TypeUserDef>
+    <TypeUserDef name="T_FbResult" size="251" nativesize="24" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="FbResult">
+      <UserDefElement iecname="eSeverity" type="T_eSeverity" byteoffset="0" vartype="VAR" propertytype="call" />
+      <UserDefElement iecname="sDescription" type="T_STRING" byteoffset="4" vartype="VAR" propertytype="call" />
+      <UserDefElement iecname="sProducerName" type="T_STRING" byteoffset="85" vartype="VAR" propertytype="call" />
+      <UserDefElement iecname="sSeverity" type="T_STRING" byteoffset="166" vartype="VAR" propertytype="call" />
+      <UserDefElement iecname="uiID" type="T_UINT" byteoffset="248" vartype="VAR" propertytype="call" />
+      <UserDefElement iecname="xError" type="T_BOOL" byteoffset="250" vartype="VAR" propertytype="call" />
+    </TypeUserDef>
+    <TypeUserDef name="T_FbSunshade_BinaryInput1Button" size="132" nativesize="220" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="FbSunshade_BinaryInput1Button">
+      <UserDefElement iecname="xMoveUP_DOWN" type="T_BOOL" byteoffset="0" vartype="VAR_INPUT" />
+      <UserDefElement iecname="tShortSwitch" type="T_TIME" byteoffset="4" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xUp" type="T_BOOL" byteoffset="8" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="xDown" type="T_BOOL" byteoffset="9" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="FbTon" type="T_ARRAY__1__1__OF_TON" byteoffset="12" vartype="VAR" />
+      <UserDefElement iecname="FbTofShortUP" type="T_ARRAY__1__1__OF_TOF" byteoffset="28" vartype="VAR" />
+      <UserDefElement iecname="FbTofShortDOWN" type="T_ARRAY__1__1__OF_TOF" byteoffset="44" vartype="VAR" />
+      <UserDefElement iecname="bFbSwitchMode" type="T_ARRAY__1__1__OF_BYTE" byteoffset="60" vartype="VAR" />
+      <UserDefElement iecname="LastMove" type="T_ARRAY__1__1__OF_BOOL" byteoffset="61" vartype="VAR" />
+      <UserDefElement iecname="LastShortMove" type="T_ARRAY__1__1__OF_BOOL" byteoffset="62" vartype="VAR" />
+      <UserDefElement iecname="arSunbUP_DOWN" type="T_ARRAY__1__1__OF_BOOL" byteoffset="63" vartype="VAR" />
+      <UserDefElement iecname="MerkerUP" type="T_ARRAY__1__1__OF_BOOL" byteoffset="64" vartype="VAR" />
+      <UserDefElement iecname="MerkerDOWN" type="T_ARRAY__1__1__OF_BOOL" byteoffset="65" vartype="VAR" />
+      <UserDefElement iecname="i" type="T_INT" byteoffset="66" vartype="VAR" />
+      <UserDefElement iecname="FbTofStepUP" type="T_ARRAY__1__1__OF_TOF" byteoffset="68" vartype="VAR" />
+      <UserDefElement iecname="FbTofStepDOWN" type="T_ARRAY__1__1__OF_TOF" byteoffset="84" vartype="VAR" />
+      <UserDefElement iecname="fbTofMoveUP" type="T_ARRAY__1__1__OF_TOF" byteoffset="100" vartype="VAR" />
+      <UserDefElement iecname="FbTofMoveDown" type="T_ARRAY__1__1__OF_TOF" byteoffset="116" vartype="VAR" />
+    </TypeUserDef>
+    <TypeSimple name="T_REFERENCE_TO_typDPT_REF" size="15" swapsize="0" typeclass="Reference" iecname="REFERENCE TO typDPT_REF" basetype="T_typDPT" />
+    <TypeSimple name="T_REFERENCE_TO_typSunblindChannelVisu_REF" size="414" swapsize="0" typeclass="Reference" iecname="REFERENCE TO typSunblindChannelVisu_REF" basetype="T_typSunblindChannelVisu" />
+    <TypeUserDef name="T_typBA_1" size="86" nativesize="92" typeclass="Userdef" pouclass="STRUCTURE" iecname="typBA_1">
+      <UserDefElement iecname="typSunblindChannel" type="T_typSunblindChannel" byteoffset="0" vartype="VAR" />
+      <UserDefElement iecname="asLabel" type="T_ARRAY__0__0__OF_STRING_17_" byteoffset="68" vartype="VAR" />
+    </TypeUserDef>
+    <TypeUserDef name="T_FbDPT_ID_1_ext" size="90" nativesize="108" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="FbDPT_ID_1_ext">
+      <UserDefElement iecname="bPortKNX" type="T_BYTE" byteoffset="0" vartype="VAR_INPUT" />
+      <UserDefElement iecname="dwIndex_DPT" type="T_DWORD" byteoffset="4" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xSwitch_IN" type="T_BOOL" byteoffset="8" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xUpdate_KNX" type="T_BOOL" byteoffset="9" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xRead_KNX" type="T_BOOL" byteoffset="10" vartype="VAR_INPUT" />
+      <UserDefElement iecname="tMinSendTime" type="T_TIME" byteoffset="12" vartype="VAR_INPUT" />
+      <UserDefElement iecname="typDPT" type="T_typDPT" byteoffset="16" vartype="VAR_IN_OUT" />
+      <UserDefElement iecname="xSwitch_OUT" type="T_BOOL" byteoffset="31" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="xUpdate_PLC" type="T_BOOL" byteoffset="32" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="xTimeOut" type="T_BOOL" byteoffset="33" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="dwAdresse" type="T_DWORD" byteoffset="36" vartype="VAR" />
+      <UserDefElement iecname="dwAdresse_OLD" type="T_DWORD" byteoffset="40" vartype="VAR" />
+      <UserDefElement iecname="R_TRIGUpdate" type="T_R_TRIG" byteoffset="44" vartype="VAR" />
+      <UserDefElement iecname="R_TRIGRead" type="T_R_TRIG" byteoffset="46" vartype="VAR" />
+      <UserDefElement iecname="Init" type="T_BOOL" byteoffset="48" vartype="VAR" />
+      <UserDefElement iecname="xSwitch_IN_old" type="T_BOOL" byteoffset="49" vartype="VAR" />
+      <UserDefElement iecname="Merker" type="T_BOOL" byteoffset="50" vartype="VAR" />
+      <UserDefElement iecname="wPos" type="T_WORD" byteoffset="52" vartype="VAR" />
+      <UserDefElement iecname="DPT_ARRAY" type="T_ARRAY__0__14__OF_BYTE" byteoffset="54" vartype="VAR" />
+      <UserDefElement iecname="i" type="T_BYTE" byteoffset="69" vartype="VAR" />
+      <UserDefElement iecname="x" type="T_BYTE" byteoffset="70" vartype="VAR" />
+      <UserDefElement iecname="MinSendTOF" type="T_TOF" byteoffset="72" vartype="VAR" />
+      <UserDefElement iecname="Update" type="T_BOOL" byteoffset="88" vartype="VAR" />
+      <UserDefElement iecname="xRead" type="T_BOOL" byteoffset="89" vartype="VAR" />
+    </TypeUserDef>
+    <TypeUserDef name="T_FbDPT_ID_2_ext" size="90" nativesize="108" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="FbDPT_ID_2_ext">
+      <UserDefElement iecname="bPortKNX" type="T_BYTE" byteoffset="0" vartype="VAR_INPUT" />
+      <UserDefElement iecname="dwIndex_DPT" type="T_DWORD" byteoffset="4" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xSwitch_IN" type="T_BOOL" byteoffset="8" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xControl_IN" type="T_BOOL" byteoffset="9" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xUpdate_KNX" type="T_BOOL" byteoffset="10" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xRead_KNX" type="T_BOOL" byteoffset="11" vartype="VAR_INPUT" />
+      <UserDefElement iecname="tMinSendTime" type="T_TIME" byteoffset="12" vartype="VAR_INPUT" />
+      <UserDefElement iecname="typDPT" type="T_typDPT" byteoffset="16" vartype="VAR_IN_OUT" />
+      <UserDefElement iecname="xSwitch_OUT" type="T_BOOL" byteoffset="31" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="xControl_OUT" type="T_BOOL" byteoffset="32" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="xUpdate_PLC" type="T_BOOL" byteoffset="33" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="xTimeOut" type="T_BOOL" byteoffset="34" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="dwAdresse" type="T_DWORD" byteoffset="36" vartype="VAR" />
+      <UserDefElement iecname="dwAdresse_OLD" type="T_DWORD" byteoffset="40" vartype="VAR" />
+      <UserDefElement iecname="R_TRIGUpdate" type="T_R_TRIG" byteoffset="44" vartype="VAR" />
+      <UserDefElement iecname="R_TRIGRead" type="T_R_TRIG" byteoffset="46" vartype="VAR" />
+      <UserDefElement iecname="Init" type="T_BOOL" byteoffset="48" vartype="VAR" />
+      <UserDefElement iecname="xSwitch_IN_old" type="T_BOOL" byteoffset="49" vartype="VAR" />
+      <UserDefElement iecname="xControl_IN_old" type="T_BOOL" byteoffset="50" vartype="VAR" />
+      <UserDefElement iecname="Merker" type="T_BOOL" byteoffset="51" vartype="VAR" />
+      <UserDefElement iecname="wPos" type="T_WORD" byteoffset="52" vartype="VAR" />
+      <UserDefElement iecname="DPT_ARRAY" type="T_ARRAY__0__14__OF_BYTE" byteoffset="54" vartype="VAR" />
+      <UserDefElement iecname="i" type="T_BYTE" byteoffset="69" vartype="VAR" />
+      <UserDefElement iecname="x" type="T_BYTE" byteoffset="70" vartype="VAR" />
+      <UserDefElement iecname="MinSendTOF" type="T_TOF" byteoffset="72" vartype="VAR" />
+      <UserDefElement iecname="Update" type="T_BOOL" byteoffset="88" vartype="VAR" />
+      <UserDefElement iecname="xRead" type="T_BOOL" byteoffset="89" vartype="VAR" />
+    </TypeUserDef>
+    <TypeUserDef name="T_FbDPT_ID_5" size="90" nativesize="108" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="FbDPT_ID_5">
+      <UserDefElement iecname="bPortKNX" type="T_BYTE" byteoffset="0" vartype="VAR_INPUT" />
+      <UserDefElement iecname="dwIndex_DPT" type="T_DWORD" byteoffset="4" vartype="VAR_INPUT" />
+      <UserDefElement iecname="bValue_IN" type="T_BYTE" byteoffset="8" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xUpdate_KNX" type="T_BOOL" byteoffset="9" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xRead_KNX" type="T_BOOL" byteoffset="10" vartype="VAR_INPUT" />
+      <UserDefElement iecname="bSendOnDelta" type="T_BYTE" byteoffset="11" vartype="VAR_INPUT" />
+      <UserDefElement iecname="tMinSendTime" type="T_TIME" byteoffset="12" vartype="VAR_INPUT" />
+      <UserDefElement iecname="typDPT" type="T_typDPT" byteoffset="16" vartype="VAR_IN_OUT" />
+      <UserDefElement iecname="bValue_OUT" type="T_BYTE" byteoffset="31" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="xUpdate_PLC" type="T_BOOL" byteoffset="32" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="xTimeOut" type="T_BOOL" byteoffset="33" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="dwAdresse" type="T_DWORD" byteoffset="36" vartype="VAR" />
+      <UserDefElement iecname="dwAdresse_OLD" type="T_DWORD" byteoffset="40" vartype="VAR" />
+      <UserDefElement iecname="R_TRIGUpdate" type="T_R_TRIG" byteoffset="44" vartype="VAR" />
+      <UserDefElement iecname="R_TRIGRead" type="T_R_TRIG" byteoffset="46" vartype="VAR" />
+      <UserDefElement iecname="Init" type="T_BOOL" byteoffset="48" vartype="VAR" />
+      <UserDefElement iecname="bValue_In_old" type="T_BYTE" byteoffset="49" vartype="VAR" />
+      <UserDefElement iecname="Merker" type="T_BOOL" byteoffset="50" vartype="VAR" />
+      <UserDefElement iecname="wPos" type="T_WORD" byteoffset="52" vartype="VAR" />
+      <UserDefElement iecname="DPT_ARRAY" type="T_ARRAY__0__14__OF_BYTE" byteoffset="54" vartype="VAR" />
+      <UserDefElement iecname="i" type="T_BYTE" byteoffset="69" vartype="VAR" />
+      <UserDefElement iecname="x" type="T_BYTE" byteoffset="70" vartype="VAR" />
+      <UserDefElement iecname="MinSendTOF" type="T_TOF" byteoffset="72" vartype="VAR" />
+      <UserDefElement iecname="Update" type="T_BOOL" byteoffset="88" vartype="VAR" />
+      <UserDefElement iecname="xRead" type="T_BOOL" byteoffset="89" vartype="VAR" />
+    </TypeUserDef>
+    <TypeUserDef name="T_FbKNX_Master" size="866" nativesize="716" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="FbKNX_Master">
+      <UserDefElement iecname="I_Port" type="T_TYPE_REFERENCE" byteoffset="0" vartype="VAR_INPUT" />
+      <UserDefElement iecname="bPortKNX" type="T_BYTE" byteoffset="4" vartype="VAR_INPUT" />
+      <UserDefElement iecname="oStatus" type="T_FbResult" byteoffset="8" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="sStatus" type="T_STRING" byteoffset="259" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="xProgMode" type="T_BOOL" byteoffset="340" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="wCountFbDPT" type="T_WORD" byteoffset="342" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="dwCRC" type="T_DWORD" byteoffset="344" vartype="VAR" />
+      <UserDefElement iecname="arInData" type="T_ARRAY__0__23__OF_BYTE" byteoffset="348" vartype="VAR" />
+      <UserDefElement iecname="arOutData" type="T_ARRAY__0__23__OF_BYTE" byteoffset="372" vartype="VAR" />
+      <UserDefElement iecname="i" type="T_BYTE" byteoffset="396" vartype="VAR" />
+      <UserDefElement iecname="TONWait" type="T_TON" byteoffset="400" vartype="VAR" />
+      <UserDefElement iecname="mSendState" type="T_BYTE" byteoffset="416" vartype="VAR" />
+      <UserDefElement iecname="mRecState" type="T_BYTE" byteoffset="417" vartype="VAR" />
+      <UserDefElement iecname="TONTimeOut" type="T_TON" byteoffset="420" vartype="VAR" />
+      <UserDefElement iecname="TONTimeOutSync" type="T_TON" byteoffset="436" vartype="VAR" />
+      <UserDefElement iecname="TonTimeOutRec" type="T_TON" byteoffset="452" vartype="VAR" />
+      <UserDefElement iecname="TonError" type="T_TON" byteoffset="468" vartype="VAR" />
+      <UserDefElement iecname="Bus_PowerUp" type="T_R_TRIG" byteoffset="484" vartype="VAR" />
+      <UserDefElement iecname="SyncEnd" type="T_BOOL" byteoffset="486" vartype="VAR" />
+      <UserDefElement iecname="mAnzahl" type="T_WORD" byteoffset="488" vartype="VAR" />
+      <UserDefElement iecname="init" type="T_BOOL" byteoffset="490" vartype="VAR" />
+      <UserDefElement iecname="StartSync" type="T_BOOL" byteoffset="491" vartype="VAR" />
+      <UserDefElement iecname="x" type="T_BYTE" byteoffset="492" vartype="VAR" />
+      <UserDefElement iecname="_sClassName" type="T_STRING" byteoffset="493" vartype="VAR" />
+      <UserDefElement iecname="_StatusFactory" type="T_FbResultFactory" byteoffset="576" vartype="VAR" />
+    </TypeUserDef>
+    <TypeSimple name="T_REFERENCE_TO_typBA_1_REF" size="86" swapsize="0" typeclass="Reference" iecname="REFERENCE TO typBA_1_REF" basetype="T_typBA_1" />
+    <TypeUserDef name="T_FbDPT_ID_1" size="126" nativesize="148" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="FbDPT_ID_1">
+      <UserDefElement iecname="bPortKNX" type="T_BYTE" byteoffset="0" vartype="VAR_INPUT" />
+      <UserDefElement iecname="dwIndex_DPT" type="T_DWORD" byteoffset="4" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xSwitch_IN" type="T_BOOL" byteoffset="8" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xUpdate_KNX" type="T_BOOL" byteoffset="9" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xSwitch_OUT" type="T_BOOL" byteoffset="10" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="xUpdate_PLC" type="T_BOOL" byteoffset="11" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="typDPT" type="T_typDPT" byteoffset="12" vartype="VAR" />
+      <UserDefElement iecname="xTimeOut" type="T_BOOL" byteoffset="27" vartype="VAR" />
+      <UserDefElement iecname="xRead_KNX" type="T_BOOL" byteoffset="28" vartype="VAR" />
+      <UserDefElement iecname="tMinSendTime" type="T_TIME" byteoffset="32" vartype="VAR" />
+      <UserDefElement iecname="H1" type="T_FbDPT_ID_1_ext" byteoffset="36" vartype="VAR" />
+    </TypeUserDef>
+    <TypeUserDef name="T_FbDPT_ID_2" size="126" nativesize="148" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="FbDPT_ID_2">
+      <UserDefElement iecname="bPortKNX" type="T_BYTE" byteoffset="0" vartype="VAR_INPUT" />
+      <UserDefElement iecname="dwIndex_DPT" type="T_DWORD" byteoffset="4" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xSwitch_IN" type="T_BOOL" byteoffset="8" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xControl_IN" type="T_BOOL" byteoffset="9" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xUpdate_KNX" type="T_BOOL" byteoffset="10" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xSwitch_OUT" type="T_BOOL" byteoffset="11" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="xControl_OUT" type="T_BOOL" byteoffset="12" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="xUpdate_PLC" type="T_BOOL" byteoffset="13" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="typDPT" type="T_typDPT" byteoffset="14" vartype="VAR" />
+      <UserDefElement iecname="xTimeOut" type="T_BOOL" byteoffset="29" vartype="VAR" />
+      <UserDefElement iecname="xRead_KNX" type="T_BOOL" byteoffset="30" vartype="VAR" />
+      <UserDefElement iecname="tMinSendTime" type="T_TIME" byteoffset="32" vartype="VAR" />
+      <UserDefElement iecname="H1" type="T_FbDPT_ID_2_ext" byteoffset="36" vartype="VAR" />
+    </TypeUserDef>
+    <TypeUserDef name="T_FbDPT_Scaling_pro" size="138" nativesize="148" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="FbDPT_Scaling_pro">
+      <UserDefElement iecname="bPortKNX" type="T_BYTE" byteoffset="0" vartype="VAR_INPUT" />
+      <UserDefElement iecname="dwIndex_DPT" type="T_DWORD" byteoffset="4" vartype="VAR_INPUT" />
+      <UserDefElement iecname="rValue_IN" type="T_REAL" byteoffset="8" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xUpdate_KNX" type="T_BOOL" byteoffset="12" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xRead_KNX" type="T_BOOL" byteoffset="13" vartype="VAR_INPUT" />
+      <UserDefElement iecname="tMinSendTime" type="T_TIME" byteoffset="16" vartype="VAR_INPUT" />
+      <UserDefElement iecname="rSendOnDelta" type="T_REAL" byteoffset="20" vartype="VAR_INPUT" />
+      <UserDefElement iecname="typDPT" type="T_typDPT" byteoffset="24" vartype="VAR_IN_OUT" />
+      <UserDefElement iecname="rValue_OUT" type="T_REAL" byteoffset="40" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="xUpdate_PLC" type="T_BOOL" byteoffset="44" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="xTimeOut" type="T_BOOL" byteoffset="45" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="P1" type="T_FbDPT_ID_5" byteoffset="48" vartype="VAR" />
+    </TypeUserDef>
+    <TypeUserDef name="T_FbDPT_Switch_pro" size="90" nativesize="108" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="FbDPT_Switch_pro" basetype="T_FbDPT_ID_1_ext">
+      <UserDefElement iecname="bPortKNX" type="T_BYTE" byteoffset="0" vartype="VAR_INPUT" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="dwIndex_DPT" type="T_DWORD" byteoffset="4" vartype="VAR_INPUT" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="xSwitch_IN" type="T_BOOL" byteoffset="8" vartype="VAR_INPUT" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="xUpdate_KNX" type="T_BOOL" byteoffset="9" vartype="VAR_INPUT" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="xRead_KNX" type="T_BOOL" byteoffset="10" vartype="VAR_INPUT" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="tMinSendTime" type="T_TIME" byteoffset="12" vartype="VAR_INPUT" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="typDPT" type="T_typDPT" byteoffset="16" vartype="VAR_IN_OUT" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="xSwitch_OUT" type="T_BOOL" byteoffset="31" vartype="VAR_OUTPUT" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="xUpdate_PLC" type="T_BOOL" byteoffset="32" vartype="VAR_OUTPUT" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="xTimeOut" type="T_BOOL" byteoffset="33" vartype="VAR_OUTPUT" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="dwAdresse" type="T_DWORD" byteoffset="36" vartype="VAR" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="dwAdresse_OLD" type="T_DWORD" byteoffset="40" vartype="VAR" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="R_TRIGUpdate" type="T_R_TRIG" byteoffset="44" vartype="VAR" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="R_TRIGRead" type="T_R_TRIG" byteoffset="46" vartype="VAR" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="Init" type="T_BOOL" byteoffset="48" vartype="VAR" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="xSwitch_IN_old" type="T_BOOL" byteoffset="49" vartype="VAR" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="Merker" type="T_BOOL" byteoffset="50" vartype="VAR" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="wPos" type="T_WORD" byteoffset="52" vartype="VAR" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="DPT_ARRAY" type="T_ARRAY__0__14__OF_BYTE" byteoffset="54" vartype="VAR" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="i" type="T_BYTE" byteoffset="69" vartype="VAR" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="x" type="T_BYTE" byteoffset="70" vartype="VAR" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="MinSendTOF" type="T_TOF" byteoffset="72" vartype="VAR" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="Update" type="T_BOOL" byteoffset="88" vartype="VAR" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="xRead" type="T_BOOL" byteoffset="89" vartype="VAR" inherited_from="T_FbDPT_ID_1_ext" />
+    </TypeUserDef>
+    <TypeUserDef name="T_FbDPT_UpDown_pro" size="90" nativesize="108" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="FbDPT_UpDown_pro" basetype="T_FbDPT_ID_1_ext">
+      <UserDefElement iecname="bPortKNX" type="T_BYTE" byteoffset="0" vartype="VAR_INPUT" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="dwIndex_DPT" type="T_DWORD" byteoffset="4" vartype="VAR_INPUT" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="xSwitch_IN" type="T_BOOL" byteoffset="8" vartype="VAR_INPUT" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="xUpdate_KNX" type="T_BOOL" byteoffset="9" vartype="VAR_INPUT" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="xRead_KNX" type="T_BOOL" byteoffset="10" vartype="VAR_INPUT" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="tMinSendTime" type="T_TIME" byteoffset="12" vartype="VAR_INPUT" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="typDPT" type="T_typDPT" byteoffset="16" vartype="VAR_IN_OUT" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="xSwitch_OUT" type="T_BOOL" byteoffset="31" vartype="VAR_OUTPUT" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="xUpdate_PLC" type="T_BOOL" byteoffset="32" vartype="VAR_OUTPUT" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="xTimeOut" type="T_BOOL" byteoffset="33" vartype="VAR_OUTPUT" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="dwAdresse" type="T_DWORD" byteoffset="36" vartype="VAR" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="dwAdresse_OLD" type="T_DWORD" byteoffset="40" vartype="VAR" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="R_TRIGUpdate" type="T_R_TRIG" byteoffset="44" vartype="VAR" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="R_TRIGRead" type="T_R_TRIG" byteoffset="46" vartype="VAR" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="Init" type="T_BOOL" byteoffset="48" vartype="VAR" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="xSwitch_IN_old" type="T_BOOL" byteoffset="49" vartype="VAR" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="Merker" type="T_BOOL" byteoffset="50" vartype="VAR" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="wPos" type="T_WORD" byteoffset="52" vartype="VAR" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="DPT_ARRAY" type="T_ARRAY__0__14__OF_BYTE" byteoffset="54" vartype="VAR" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="i" type="T_BYTE" byteoffset="69" vartype="VAR" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="x" type="T_BYTE" byteoffset="70" vartype="VAR" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="MinSendTOF" type="T_TOF" byteoffset="72" vartype="VAR" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="Update" type="T_BOOL" byteoffset="88" vartype="VAR" inherited_from="T_FbDPT_ID_1_ext" />
+      <UserDefElement iecname="xRead" type="T_BOOL" byteoffset="89" vartype="VAR" inherited_from="T_FbDPT_ID_1_ext" />
+    </TypeUserDef>
+    <TypeUserDef name="T_FbDPT_Switch_Control" size="126" nativesize="148" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="FbDPT_Switch_Control" basetype="T_FbDPT_ID_2">
+      <UserDefElement iecname="bPortKNX" type="T_BYTE" byteoffset="0" vartype="VAR_INPUT" inherited_from="T_FbDPT_ID_2" />
+      <UserDefElement iecname="dwIndex_DPT" type="T_DWORD" byteoffset="4" vartype="VAR_INPUT" inherited_from="T_FbDPT_ID_2" />
+      <UserDefElement iecname="xSwitch_IN" type="T_BOOL" byteoffset="8" vartype="VAR_INPUT" inherited_from="T_FbDPT_ID_2" />
+      <UserDefElement iecname="xControl_IN" type="T_BOOL" byteoffset="9" vartype="VAR_INPUT" inherited_from="T_FbDPT_ID_2" />
+      <UserDefElement iecname="xUpdate_KNX" type="T_BOOL" byteoffset="10" vartype="VAR_INPUT" inherited_from="T_FbDPT_ID_2" />
+      <UserDefElement iecname="xSwitch_OUT" type="T_BOOL" byteoffset="11" vartype="VAR_OUTPUT" inherited_from="T_FbDPT_ID_2" />
+      <UserDefElement iecname="xControl_OUT" type="T_BOOL" byteoffset="12" vartype="VAR_OUTPUT" inherited_from="T_FbDPT_ID_2" />
+      <UserDefElement iecname="xUpdate_PLC" type="T_BOOL" byteoffset="13" vartype="VAR_OUTPUT" inherited_from="T_FbDPT_ID_2" />
+      <UserDefElement iecname="typDPT" type="T_typDPT" byteoffset="14" vartype="VAR" inherited_from="T_FbDPT_ID_2" />
+      <UserDefElement iecname="xTimeOut" type="T_BOOL" byteoffset="29" vartype="VAR" inherited_from="T_FbDPT_ID_2" />
+      <UserDefElement iecname="xRead_KNX" type="T_BOOL" byteoffset="30" vartype="VAR" inherited_from="T_FbDPT_ID_2" />
+      <UserDefElement iecname="tMinSendTime" type="T_TIME" byteoffset="32" vartype="VAR" inherited_from="T_FbDPT_ID_2" />
+      <UserDefElement iecname="H1" type="T_FbDPT_ID_2_ext" byteoffset="36" vartype="VAR" inherited_from="T_FbDPT_ID_2" />
+    </TypeUserDef>
+    <TypeUserDef name="T_FbDPT_UpDown" size="126" nativesize="148" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="FbDPT_UpDown" basetype="T_FbDPT_ID_1">
+      <UserDefElement iecname="bPortKNX" type="T_BYTE" byteoffset="0" vartype="VAR_INPUT" inherited_from="T_FbDPT_ID_1" />
+      <UserDefElement iecname="dwIndex_DPT" type="T_DWORD" byteoffset="4" vartype="VAR_INPUT" inherited_from="T_FbDPT_ID_1" />
+      <UserDefElement iecname="xSwitch_IN" type="T_BOOL" byteoffset="8" vartype="VAR_INPUT" inherited_from="T_FbDPT_ID_1" />
+      <UserDefElement iecname="xUpdate_KNX" type="T_BOOL" byteoffset="9" vartype="VAR_INPUT" inherited_from="T_FbDPT_ID_1" />
+      <UserDefElement iecname="xSwitch_OUT" type="T_BOOL" byteoffset="10" vartype="VAR_OUTPUT" inherited_from="T_FbDPT_ID_1" />
+      <UserDefElement iecname="xUpdate_PLC" type="T_BOOL" byteoffset="11" vartype="VAR_OUTPUT" inherited_from="T_FbDPT_ID_1" />
+      <UserDefElement iecname="typDPT" type="T_typDPT" byteoffset="12" vartype="VAR" inherited_from="T_FbDPT_ID_1" />
+      <UserDefElement iecname="xTimeOut" type="T_BOOL" byteoffset="27" vartype="VAR" inherited_from="T_FbDPT_ID_1" />
+      <UserDefElement iecname="xRead_KNX" type="T_BOOL" byteoffset="28" vartype="VAR" inherited_from="T_FbDPT_ID_1" />
+      <UserDefElement iecname="tMinSendTime" type="T_TIME" byteoffset="32" vartype="VAR" inherited_from="T_FbDPT_ID_1" />
+      <UserDefElement iecname="H1" type="T_FbDPT_ID_1_ext" byteoffset="36" vartype="VAR" inherited_from="T_FbDPT_ID_1" />
+    </TypeUserDef>
+    <TypeUserDef name="T_FbKNX_Sunblind_actuator_1" size="1566" nativesize="2420" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="FbKNX_Sunblind_actuator_1">
+      <UserDefElement iecname="_01_IN_Movement" type="T_FbDPT_UpDown_pro" byteoffset="0" vartype="VAR" />
+      <UserDefElement iecname="_02_IN_Stop_Step" type="T_FbDPT_UpDown_pro" byteoffset="92" vartype="VAR" />
+      <UserDefElement iecname="_03_IN_SetPosition" type="T_FbDPT_Switch_pro" byteoffset="184" vartype="VAR" />
+      <UserDefElement iecname="_04_IN_MaintenancePosition" type="T_FbDPT_Switch_pro" byteoffset="276" vartype="VAR" />
+      <UserDefElement iecname="_05_IN_LockPosition" type="T_FbDPT_Switch_pro" byteoffset="368" vartype="VAR" />
+      <UserDefElement iecname="_06_OUT_Feedback_Pos" type="T_FbDPT_Scaling_pro" byteoffset="460" vartype="VAR" />
+      <UserDefElement iecname="_07_OUT_Feedback_Lamella" type="T_FbDPT_Scaling_pro" byteoffset="600" vartype="VAR" />
+      <UserDefElement iecname="typDPT_OFF" type="T_typDPT" byteoffset="738" vartype="VAR" />
+      <UserDefElement iecname="idx1" type="T_DWORD" byteoffset="756" vartype="VAR" />
+      <UserDefElement iecname="idx2" type="T_DWORD" byteoffset="760" vartype="VAR" />
+      <UserDefElement iecname="idx3" type="T_DWORD" byteoffset="764" vartype="VAR" />
+      <UserDefElement iecname="idx4" type="T_DWORD" byteoffset="768" vartype="VAR" />
+      <UserDefElement iecname="idx5" type="T_DWORD" byteoffset="772" vartype="VAR" />
+      <UserDefElement iecname="idx6" type="T_DWORD" byteoffset="776" vartype="VAR" />
+      <UserDefElement iecname="idx7" type="T_DWORD" byteoffset="780" vartype="VAR" />
+      <UserDefElement iecname="xCentralUP" type="T_BOOL" byteoffset="784" vartype="VAR" />
+      <UserDefElement iecname="xCentralDOWN" type="T_BOOL" byteoffset="785" vartype="VAR" />
+      <UserDefElement iecname="xSafetyPos" type="T_BOOL" byteoffset="786" vartype="VAR" />
+      <UserDefElement iecname="xSunpos_South" type="T_BOOL" byteoffset="787" vartype="VAR" />
+      <UserDefElement iecname="xSunpos_East" type="T_BOOL" byteoffset="788" vartype="VAR" />
+      <UserDefElement iecname="xSunpos_West" type="T_BOOL" byteoffset="789" vartype="VAR" />
+      <UserDefElement iecname="Anzahl_Visu" type="T_BYTE" byteoffset="790" vartype="VAR" />
+      <UserDefElement iecname="init" type="T_BOOL" byteoffset="791" vartype="VAR" />
+      <UserDefElement iecname="i" type="T_INT" byteoffset="792" vartype="VAR" />
+      <UserDefElement iecname="m1_old" type="T_INT" byteoffset="794" vartype="VAR" />
+      <UserDefElement iecname="xWrite" type="T_BOOL" byteoffset="796" vartype="VAR" />
+      <UserDefElement iecname="Sunpos" type="T_BOOL" byteoffset="797" vartype="VAR" />
+      <UserDefElement iecname="xSetDefault" type="T_BOOL" byteoffset="798" vartype="VAR" />
+      <UserDefElement iecname="xButton_UP" type="T_BOOL" byteoffset="799" vartype="VAR" />
+      <UserDefElement iecname="xButton_DOWN" type="T_BOOL" byteoffset="800" vartype="VAR" />
+      <UserDefElement iecname="rStatusUP" type="T_BOOL" byteoffset="801" vartype="VAR" />
+      <UserDefElement iecname="rStatusDOWN" type="T_BOOL" byteoffset="802" vartype="VAR" />
+      <UserDefElement iecname="wPushbutton_UP" type="T_WORD" byteoffset="804" vartype="VAR" />
+      <UserDefElement iecname="wPushbutton_DOWN" type="T_WORD" byteoffset="806" vartype="VAR" />
+      <UserDefElement iecname="TOFMoveDownKNX" type="T_TOF" byteoffset="808" vartype="VAR" />
+      <UserDefElement iecname="TOFMoveUpKNX" type="T_TOF" byteoffset="824" vartype="VAR" />
+      <UserDefElement iecname="TOFStepDownKNX" type="T_TOF" byteoffset="840" vartype="VAR" />
+      <UserDefElement iecname="TOFStepUpKNX" type="T_TOF" byteoffset="856" vartype="VAR" />
+      <UserDefElement iecname="TOFMoveUpCentral" type="T_TOF" byteoffset="872" vartype="VAR" />
+      <UserDefElement iecname="TOFMoveDownCentral" type="T_TOF" byteoffset="888" vartype="VAR" />
+      <UserDefElement iecname="xConfigEqual" type="T_BOOL" byteoffset="904" vartype="VAR" />
+      <UserDefElement iecname="xTypAutomaticEqual" type="T_BOOL" byteoffset="905" vartype="VAR" />
+      <UserDefElement iecname="xResetOverrideOld" type="T_BOOL" byteoffset="906" vartype="VAR" />
+      <UserDefElement iecname="xSetPositionOld" type="T_BOOL" byteoffset="907" vartype="VAR" />
+      <UserDefElement iecname="xMaintenancePositionOld" type="T_BOOL" byteoffset="908" vartype="VAR" />
+      <UserDefElement iecname="xLockPositionOld" type="T_BOOL" byteoffset="909" vartype="VAR" />
+      <UserDefElement iecname="oFbSunshade_1Button" type="T_FbSunshade_BinaryInput1Button" byteoffset="912" vartype="VAR" />
+      <UserDefElement iecname="xButton_UP_1Rocker" type="T_BOOL" byteoffset="1044" vartype="VAR" />
+      <UserDefElement iecname="xButton_DOWN_1Rocker" type="T_BOOL" byteoffset="1045" vartype="VAR" />
+      <UserDefElement iecname="bPortKNX" type="T_BYTE" byteoffset="1046" vartype="VAR_INPUT" />
+      <UserDefElement iecname="dwindex_DPT" type="T_DWORD" byteoffset="1048" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xPushbutton_UP" type="T_BOOL" byteoffset="1052" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xPushbutton_DOWN" type="T_BOOL" byteoffset="1053" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xCentral_Up" type="T_BOOL" byteoffset="1054" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xCentral_Down" type="T_BOOL" byteoffset="1055" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xSun_East" type="T_BOOL" byteoffset="1056" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xSun_South" type="T_BOOL" byteoffset="1057" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xSun_West" type="T_BOOL" byteoffset="1058" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xSafetyPosition" type="T_BOOL" byteoffset="1059" vartype="VAR_INPUT" />
+      <UserDefElement iecname="xUP" type="T_BOOL" byteoffset="1060" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="xDOWN" type="T_BOOL" byteoffset="1061" vartype="VAR_OUTPUT" />
+      <UserDefElement iecname="typBA_1" type="T_typBA_1" byteoffset="1064" vartype="VAR_IN_OUT" />
+      <UserDefElement iecname="typSunblindChannelVisu" type="T_typSunblindChannelVisu" byteoffset="1152" vartype="VAR_IN_OUT" />
+    </TypeUserDef>
+    <TypeArray name="T_ARRAY__0__63__OF_WagoAppKNX_FbDPT_Switch_Control" size="8192" nativesize="9472" typeclass="Array" iecname="ARRAY [0..63] OF WagoAppKNX.FbDPT_Switch_Control" basetype="T_FbDPT_Switch_Control">
+      <ArrayDim minrange="0" maxrange="63" />
+    </TypeArray>
+    <TypeArray name="T_ARRAY__0__63__OF_WagoAppKNX_FbDPT_UpDown" size="8192" nativesize="9472" typeclass="Array" iecname="ARRAY [0..63] OF WagoAppKNX.FbDPT_UpDown" basetype="T_FbDPT_UpDown">
+      <ArrayDim minrange="0" maxrange="63" />
+    </TypeArray>
+    <TypeSimple name="T_TYPE_REFERENCE" size="4" swapsize="4" typeclass="Userdef" iecname="TYPE_REFERENCE" />
+  </TypeList>
+  <NodeList>
+    <Node name="Application">
+      <Node name="Persistent_Variables">
+        <Node name="typSunblindChannelVisu" type="T_typSunblindChannelVisu" access="ReadWrite" />
+      </Node>
+      <Node name="PLC_PRG">
+        <Node name="iKNXCounter" type="T_DINT" access="ReadWrite" />
+        <Node name="iKNXFrom" type="T_DINT" access="ReadWrite" />
+        <Node name="iKNXTo" type="T_DINT" access="ReadWrite" />
+        <Node name="KNX_Master" type="T_FbKNX_Master" access="ReadWrite" />
+        <Node name="M1_001_DPT_Switch_Control" type="T_FbDPT_Switch_Control" access="ReadWrite" />
+        <Node name="M1_002_KNX_Sunblind_actuator_1" type="T_FbKNX_Sunblind_actuator_1" access="ReadWrite" />
+        <Node name="M1_003_DPT_Switch_Controls" type="T_ARRAY__0__63__OF_WagoAppKNX_FbDPT_Switch_Control" access="ReadWrite" />
+        <Node name="M1_004_DPT_UpDowns" type="T_ARRAY__0__63__OF_WagoAppKNX_FbDPT_UpDown" access="ReadWrite" />
+        <Node name="M1_005_DPT_UpDown" type="T_FbDPT_UpDown" access="ReadWrite" />
+        <Node name="oStatus" type="T_FbResult" access="ReadWrite" />
+        <Node name="sStatus" type="T_STRING" access="ReadWrite" />
+        <Node name="typBA_1" type="T_typBA_1" access="ReadWrite" />
+        <Node name="wCountFbDPT" type="T_WORD" access="ReadWrite" />
+        <Node name="xCentral_Down" type="T_BOOL" access="ReadWrite" />
+        <Node name="xCentral_Up" type="T_BOOL" access="ReadWrite" />
+        <Node name="xControl_IN" type="T_BOOL" access="ReadWrite" />
+        <Node name="xControl_OUT" type="T_BOOL" access="ReadWrite" />
+        <Node name="xDOWN" type="T_BOOL" access="ReadWrite" />
+        <Node name="xInitialized" type="T_BOOL" access="ReadWrite" />
+        <Node name="xInitializing" type="T_BOOL" access="ReadWrite" />
+        <Node name="xProgMode" type="T_BOOL" access="ReadWrite" />
+        <Node name="xPushbutton_DOWN" type="T_BOOL" access="ReadWrite" />
+        <Node name="xPushbutton_UP" type="T_BOOL" access="ReadWrite" />
+        <Node name="xSafetyPosition" type="T_BOOL" access="ReadWrite" />
+        <Node name="xSun_East" type="T_BOOL" access="ReadWrite" />
+        <Node name="xSun_South" type="T_BOOL" access="ReadWrite" />
+        <Node name="xSun_West" type="T_BOOL" access="ReadWrite" />
+        <Node name="xSwitch_IN" type="T_BOOL" access="ReadWrite" />
+        <Node name="xSwitch_OUT" type="T_BOOL" access="ReadWrite" />
+        <Node name="xSwitchUpdate_KNX" type="T_BOOL" access="ReadWrite" />
+        <Node name="xSwitchUpdate_PLC" type="T_BOOL" access="ReadWrite" />
+        <Node name="xUP" type="T_BOOL" access="ReadWrite" />
+        <Node name="xUpDown_IN" type="T_BOOL" access="ReadWrite" />
+        <Node name="xUpDown_OUT" type="T_BOOL" access="ReadWrite" />
+        <Node name="xUpDownUpdate_PLC" type="T_BOOL" access="ReadWrite" />
+      </Node>
+    </Node>
+  </NodeList>
+</Symbolconfiguration>
