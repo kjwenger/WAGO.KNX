@@ -583,7 +583,10 @@
   <NodeList>
     <Node name="Application">
       <Node name="Persistent_Variables">
+        <Node name="typBA_1" type="T_typBA_1" access="ReadWrite" />
+        <Node name="typSA_1" type="T_typSA_1" access="ReadWrite" />
         <Node name="typSunblindChannelVisu" type="T_typSunblindChannelVisu" access="ReadWrite" />
+        <Node name="typSwitchChannelVisu" type="T_typSwitchChannelVisu" access="ReadWrite" />
       </Node>
       <Node name="PLC_PRG">
         <Node name="iKNXCounter" type="T_DINT" access="ReadWrite" />
@@ -597,13 +600,11 @@
         <Node name="M1_005_DPT_UpDown" type="T_FbDPT_UpDown" access="ReadWrite" />
         <Node name="oStatus" type="T_FbResult" access="ReadWrite" />
         <Node name="sStatus" type="T_STRING" access="ReadWrite" />
-        <Node name="typBA_1" type="T_typBA_1" access="ReadWrite" />
         <Node name="wCountFbDPT" type="T_WORD" access="ReadWrite" />
-        <Node name="xCentral_Down" type="T_BOOL" access="ReadWrite" />
+        <Node name="xCentral_DOWN" type="T_BOOL" access="ReadWrite" />
         <Node name="xCentral_OFF" type="T_BOOL" access="ReadWrite" />
         <Node name="xCentral_ON" type="T_BOOL" access="ReadWrite" />
-        <Node name="xCentral_Up" type="T_BOOL" access="ReadWrite" />
-        <Node name="xControl_OUT" type="T_BOOL" access="ReadWrite" />
+        <Node name="xCentral_UP" type="T_BOOL" access="ReadWrite" />
         <Node name="xDOWN" type="T_BOOL" access="ReadWrite" />
         <Node name="xInitialized" type="T_BOOL" access="ReadWrite" />
         <Node name="xInitializing" type="T_BOOL" access="ReadWrite" />
@@ -616,7 +617,6 @@
         <Node name="xSun_South" type="T_BOOL" access="ReadWrite" />
         <Node name="xSun_West" type="T_BOOL" access="ReadWrite" />
         <Node name="xSwitch_OUT" type="T_BOOL" access="ReadWrite" />
-        <Node name="xSwitchUpdate_PLC" type="T_BOOL" access="ReadWrite" />
         <Node name="xUP" type="T_BOOL" access="ReadWrite" />
         <Node name="xUpDown_IN" type="T_BOOL" access="ReadWrite" />
         <Node name="xUpDown_OUT" type="T_BOOL" access="ReadWrite" />
